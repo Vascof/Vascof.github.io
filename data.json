@@ -1,0 +1,245 @@
+{
+  "meta": {
+    "name": "Vasco Ferreira",
+    "title": "Software Engineer · QA Specialist",
+    "location": "Nice, France",
+    "email": "vasco.ferreira94@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/vascopferreira/",
+    "github": "",
+    "website": "",
+    "lastUpdated": "2025"
+  },
+
+  "about": "Electrical engineer turned QA specialist with a genuine passion for data, systems, and the craft of building reliable software. I care about quality at every level — in code, in people, and in experience. Outside the terminal I surf, write, play guitar, and have spent a year wandering South America with a backpack.",
+
+  "experience": [
+    {
+      "role": "Quality Assurance Engineer",
+      "org": "Amadeus",
+      "period": "Jun 2023 – Oct 2025",
+      "location": "Nice, France",
+      "tags": ["pro"],
+      "bullets": [
+        "Ensured end-to-end quality of the NDCX NDC API platform by defining and executing test plans within a SAFe/Scrum team.",
+        "Performed exploratory, functional, and end-to-end testing of airline, GDS and payment integrations via APIs and UI flows.",
+        "Designed automated regression tests in Python (internal framework + Robot Framework); reviewed C++ changes to assess testing impact.",
+        "Led design and implementation of the CI/CD testing pipeline (Jenkins, BIRD), integrating automated suites into deployments.",
+        "Managed user stories, test cases, and defects in Jira and Octane; mentored juniors and contributed to team-wide testing standards."
+      ],
+      "skills": ["Python", "Robot Framework", "CI/CD", "Jenkins", "API Testing", "SAFe/Scrum"]
+    },
+    {
+      "role": "Quality Assurance Engineer",
+      "org": "Runtime Revolution",
+      "period": "Apr 2023 – Jun 2023",
+      "location": "Lisbon, Portugal",
+      "tags": ["pro"],
+      "bullets": [
+        "Browser automation with no-code tools and Python, applying ISTQB techniques to ensure optimal web app functionality.",
+        "QA strategy design, Agile methodologies, and efficient bug tracking."
+      ],
+      "skills": ["Python", "Agile", "ISTQB", "Browser Automation"]
+    },
+    {
+      "role": "Software Developer Engineer in Test",
+      "org": "Critical Software",
+      "period": "Dec 2020 – May 2022",
+      "location": "Coimbra, Portugal",
+      "tags": ["pro"],
+      "bullets": [
+        "Functional, integration, and regression testing on embedded software systems for automotive ECUs.",
+        "Testing platform for Autonomous Driving (BMW / AUTOSAR) using TDFNext Framework with Hardware-in-Loop (HiL) simulation.",
+        "Stack size management for automotive embedded systems — integration of Gliwa T1 for runtime measurements.",
+        "Agile environment; collaborated across developers, project managers, and clients to report testing progress and risks."
+      ],
+      "skills": ["C++", "Embedded Systems", "Automotive ECU", "HiL", "AUTOSAR"]
+    },
+    {
+      "role": "Research Assistant – Data Analyst",
+      "org": "Institute of Systems and Robotics, Univ. Coimbra",
+      "period": "Jun 2019 – Aug 2020",
+      "location": "Coimbra, Portugal",
+      "tags": ["pro"],
+      "bullets": [
+        "Applied computer vision and machine learning to recognise and authenticate images using advanced image descriptors.",
+        "Technology creates unique stochastic markings to authenticate high-end products — currently deployed in tobacco package stamps.",
+        "Extracted forensic features (particles, faces, fingerprints) for use in identity documents. Collaboration with Portugal's National Mint (INCM)."
+      ],
+      "skills": ["Python", "Computer Vision", "Machine Learning", "OpenCV"]
+    },
+    {
+      "role": "Web Developer — Summer Internship",
+      "org": "SPEAK",
+      "period": "Aug 2015",
+      "location": "Leiria, Portugal",
+      "tags": ["pro"],
+      "bullets": [
+        "Developed front-end and back-end features on their web application using the OutSystems Platform.",
+        "UI improvements in HTML and CSS; collaborated with multidisciplinary teams on project planning."
+      ],
+      "skills": ["OutSystems", "HTML/CSS"]
+    },
+    {
+      "role": "Cultural Department Coordinator",
+      "org": "Erasmus Student Network (ESN) Coimbra",
+      "period": "Aug 2019 – Jul 2020",
+      "location": "Coimbra, Portugal",
+      "tags": ["vol"],
+      "bullets": [
+        "Organised all logistics for trips and events across Portugal for international students — accommodations, transport, activities.",
+        "Provided training and onboarding for new members."
+      ],
+      "skills": ["Event Coordination", "Logistics", "Mentoring", "International Relations"]
+    },
+    {
+      "role": "Vice-President",
+      "org": "Board of European Students of Technology (BEST)",
+      "period": "Jul 2015 – Sept 2015",
+      "location": "Leiria, Portugal",
+      "tags": ["vol"],
+      "bullets": [
+        "Strategic communication between BEST and its stakeholders: university, companies, students, and media.",
+        "Social media content creation, event planning, financial oversight, and organisational governance."
+      ],
+      "skills": ["Leadership", "Strategy", "Communications", "Governance"]
+    },
+    {
+      "role": "Marketing Director — Part-time",
+      "org": "Diva Beauty Center",
+      "period": "May 2016 – Nov 2016",
+      "location": "Ourém, Portugal",
+      "tags": ["vol", "hob"],
+      "bullets": [
+        "Created and managed marketing campaigns, social media content, and website copywriting."
+      ],
+      "skills": ["Marketing", "Content Creation", "Social Media"]
+    },
+    {
+      "role": "Competitor — European BEST Engineering Competition (EBEC)",
+      "org": "BEST",
+      "period": "2013 – 2014",
+      "location": "Coimbra, Portugal",
+      "tags": ["pro", "vol"],
+      "bullets": [
+        "Pan-European student engineering competition. Teams of 4 solve complex technical challenges across local, regional, and European finals."
+      ],
+      "skills": ["Engineering", "Teamwork", "Problem Solving"]
+    }
+  ],
+
+  "education": [
+    {
+      "degree": "Unfinished Master's — Electrical & Computer Engineering",
+      "school": "University of Coimbra",
+      "period": "2018 – 2021",
+      "note": "Computer Architecture, Computer Vision, Digital Fabrication, MEMS, High Performance Computing, Real-Time Systems, Systems Engineering."
+    },
+    {
+      "degree": "Bachelor's — Electrical Engineering",
+      "school": "University of Coimbra",
+      "period": "2012 – 2018",
+      "note": "Comprehensive engineering sciences with hands-on laboratory and project-oriented learning."
+    },
+    {
+      "degree": "Secondary School — Sciences & Technologies",
+      "school": "Centro de Estudos de Fátima",
+      "period": "2004 – 2013",
+      "note": ""
+    }
+  ],
+
+  "skills": [
+    {
+      "group": "Languages",
+      "items": ["Python", "C++", "C", "SQL", "HTML/CSS", "CUDA", "Assembly", "VHDL", "Matlab"]
+    },
+    {
+      "group": "Testing",
+      "items": ["Robot Framework", "SOAPUI", "Postman", "ISTQB", "Pytest", "Jenkins", "CI/CD", "Octane"]
+    },
+    {
+      "group": "Platforms & Tools",
+      "items": ["Linux", "Git", "Jira", "Trello", "OutSystems", "Arduino", "Visual Studio", "LaTeX"]
+    },
+    {
+      "group": "Protocols & Systems",
+      "items": ["CAN bus", "FlexRay", "SOME/IP", "Ethernet", "REST API", "AUTOSAR", "HiL", "JSON"]
+    }
+  ],
+
+  "languages": [
+    { "name": "Portuguese", "level": "Native",            "pct": 100 },
+    { "name": "English",    "level": "C1 / FCE",          "pct": 95  },
+    { "name": "Spanish",    "level": "Full Professional",  "pct": 75  },
+    { "name": "French",     "level": "Elementary",         "pct": 30  },
+    { "name": "German",     "level": "Beginner",           "pct": 10  }
+  ],
+
+  "certifications": [
+    { "issuer": "ISTQB",    "name": "Certified Tester Foundation Level" },
+    { "issuer": "Cambridge","name": "FCE — First Certificate in English" }
+  ],
+
+  "hobbies": [
+    {
+      "icon": "🏄",
+      "name": "Surfing",
+      "note": "Ocean lover. Atlantic waves, Portuguese coast."
+    },
+    {
+      "icon": "🎸",
+      "name": "Guitar",
+      "note": "Self-taught. Fingerpicking, chords, songwriting."
+    },
+    {
+      "icon": "✍️",
+      "name": "Writing & Journaling",
+      "note": "Daily journaling practice. Reflective writing and storytelling."
+    },
+    {
+      "icon": "📚",
+      "name": "Reading",
+      "note": "Philosophy, tech, travel literature, and fiction."
+    },
+    {
+      "icon": "⛺",
+      "name": "Camping & Outdoors",
+      "note": "14 years as a scout. Mountains, forests, bivouacking."
+    },
+    {
+      "icon": "✈️",
+      "name": "Traveling",
+      "note": "Solo travel advocate. Backpack over suitcase, always."
+    }
+  ],
+
+  "travel": [
+    {
+      "region": "South America",
+      "title": "1-Year Solo Trip",
+      "note": "Travelled solo across South America for a full year with a backpack. Add the countries you visited here — Colombia, Peru, Argentina, Bolivia, Brazil, Chile, Ecuador... Immersed in local cultures, languages, and landscapes."
+    },
+    {
+      "region": "Europe",
+      "title": "ESN Coordination Trips",
+      "note": "Organised and led cultural trips across Portugal for international Erasmus students."
+    },
+    {
+      "region": "Currently Based",
+      "title": "Nice, France",
+      "note": "Living and working on the French Riviera since 2023. Exploring Southern Europe on weekends."
+    }
+  ],
+
+  "projects": [
+    {
+      "name": "Robot Telemetry Data App",
+      "org": "Side Project",
+      "period": "2017",
+      "location": "Coimbra",
+      "tags": ["pro", "hob"],
+      "description": "Application that records telemetry data from mobile robots via TCP/IP connections.",
+      "skills": ["Networking", "Embedded Systems"]
+    }
+  ]
+}

@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vasco Ferreira</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Mono:wght@300;400;500&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<style>
+  /* ── TOKENS ── */
+  :root {
+    --bg:       #0e0e0e;
+    --surface:  #161616;
+    --border:   #252525;
+    --muted:    #4e4e4e;
+    --subtle:   #808080;
+    --body:     #c0bab2;
+    --heading:  #eee8df;
+    --accent:   #c9a96e;
+    --teal:     #7eb8a4;
+    --lilac:    #b48cba;
+    --blue:     #6aaed6;
+
+    --ff-display: 'Playfair Display', Georgia, serif;
+    --ff-body:    'DM Sans', sans-serif;
+    --ff-mono:    'DM Mono', monospace;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { font-size: 16px; scroll-behavior: smooth; }
+  body {
+    background: var(--bg);
+    color: var(--body);
+    font-family: var(--ff-body);
+    font-weight: 300;
+    line-height: 1.75;
+    min-height: 100vh;
+  }
+
+  /* grain */
+  body::after {
+    content: '';
+    position: fixed; inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 9999;
+  }
+
+  /* ── LAYOUT ── */
+  .page { max-width: 860px; margin: 0 auto; padding: 0 2rem 8rem; }
+
+  /* ── TOOLBAR ── */
+  .toolbar {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(14,14,14,.94);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid var(--border);
+    padding: .7rem 2rem;
+    display: flex; align-items: center; gap: .6rem; flex-wrap: wrap;
+    margin: 0 -2rem;
+  }
+  .toolbar-label {
+    font-family: var(--ff-mono); font-size: .6rem;
+    letter-spacing: .18em; text-transform: uppercase;
+    color: var(--muted); margin-right: .4rem;
+  }
+  .filter-btn {
+    font-family: var(--ff-mono); font-size: .67rem;
+    letter-spacing: .07em; padding: .28rem .85rem;
+    border-radius: 2px; border: 1px solid var(--border);
+    background: transparent; color: var(--subtle);
+    cursor: pointer; transition: all .18s;
+  }
+  .filter-btn:hover  { border-color: var(--accent); color: var(--accent); }
+  .filter-btn.active { color: #0e0e0e; font-weight: 500; }
+  .filter-btn.active[data-filter="all"]  { background: var(--accent);  border-color: var(--accent); }
+  .filter-btn.active[data-filter="pro"]  { background: var(--teal);   border-color: var(--teal); }
+  .filter-btn.active[data-filter="vol"]  { background: var(--accent);  border-color: var(--accent); }
+  .filter-btn.active[data-filter="hob"]  { background: var(--lilac);  border-color: var(--lilac); }
+  .filter-btn.active[data-filter="trv"]  { background: var(--blue);   border-color: var(--blue); }
+
+  .print-btn {
+    margin-left: auto;
+    font-family: var(--ff-mono); font-size: .62rem;
+    letter-spacing: .1em; padding: .28rem .85rem;
+    border-radius: 2px; border: 1px solid var(--border);
+    background: transparent; color: var(--muted);
+    cursor: pointer; transition: all .18s;
+  }
+  .print-btn:hover { border-color: var(--body); color: var(--body); }
+
+  /* ── HEADER ── */
+  header {
+    padding: 5rem 0 3rem;
+    border-bottom: 1px solid var(--border);
+    position: relative;
+  }
+  header::after {
+    content: ''; position: absolute;
+    bottom: -1px; left: 0;
+    width: 64px; height: 2px;
+    background: var(--accent);
+  }
+  .header-eyebrow {
+    font-family: var(--ff-mono); font-size: .62rem;
+    letter-spacing: .22em; text-transform: uppercase;
+    color: var(--accent); margin-bottom: .9rem;
+  }
+  h1 {
+    font-family: var(--ff-display);
+    font-size: clamp(2.8rem, 8vw, 5rem);
+    font-weight: 700; color: var(--heading);
+    line-height: 1; letter-spacing: -.02em;
+    margin-bottom: .45rem;
+  }
+  .tagline {
+    font-size: .9rem; color: var(--subtle);
+    letter-spacing: .04em; margin-bottom: 1.8rem;
+  }
+  .contact-row {
+    display: flex; gap: 1.8rem; flex-wrap: wrap;
+    font-family: var(--ff-mono); font-size: .72rem; color: var(--muted);
+  }
+  .contact-row a { color: var(--accent); text-decoration: none; }
+  .contact-row a:hover { text-decoration: underline; }
+
+  /* ── SECTION ── */
+  section { margin-top: 3.5rem; }
+  .section-label {
+    font-family: var(--ff-mono); font-size: .58rem;
+    letter-spacing: .28em; text-transform: uppercase;
+    color: var(--accent); margin-bottom: 1.8rem;
+    display: flex; align-items: center; gap: 1rem;
+  }
+  .section-label::after {
+    content: ''; flex: 1; height: 1px; background: var(--border);
+  }
+
+  /* ── ABOUT ── */
+  .about-text {
+    font-size: .93rem;
+    color: var(--body);
+    line-height: 1.9;
+    max-width: 680px;
+    border-left: 2px solid var(--accent);
+    padding-left: 1.4rem;
+  }
+
+  /* ── EXPERIENCE ── */
+  .exp-item {
+    padding: 1.6rem 0;
+    border-bottom: 1px solid var(--border);
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    gap: 2rem;
+    animation: fadeUp .4s ease both;
+  }
+  .exp-item.hidden { display: none; }
+
+  .exp-meta { padding-top: .15rem; }
+  .exp-period {
+    font-family: var(--ff-mono); font-size: .68rem;
+    color: var(--muted); line-height: 1.6; margin-bottom: .3rem;
+  }
+  .exp-location { font-family: var(--ff-mono); font-size: .62rem; color: var(--muted); opacity: .65; }
+
+  .exp-role {
+    font-family: var(--ff-display); font-size: 1.05rem;
+    color: var(--heading); font-weight: 400; margin-bottom: .15rem;
+  }
+  .exp-org {
+    font-family: var(--ff-mono); font-size: .72rem;
+    color: var(--accent); margin-bottom: .75rem; letter-spacing: .04em;
+  }
+  .exp-desc { font-size: .85rem; color: var(--body); line-height: 1.8; }
+  .exp-desc ul { padding-left: 1.1rem; }
+  .exp-desc li { margin-bottom: .35rem; }
+
+  .skill-tags { display: flex; gap: .4rem; flex-wrap: wrap; margin-top: .8rem; }
+  .skill-tag {
+    font-family: var(--ff-mono); font-size: .58rem;
+    letter-spacing: .07em; padding: .18rem .55rem;
+    border-radius: 2px; text-transform: uppercase;
+    border: 1px solid var(--border); color: var(--muted);
+  }
+  /* color by category */
+  .skill-tag.pro { color: var(--teal);  border-color: rgba(126,184,164,.3); background: rgba(126,184,164,.07); }
+  .skill-tag.vol { color: var(--accent);border-color: rgba(201,169,110,.3); background: rgba(201,169,110,.07); }
+  .skill-tag.hob { color: var(--lilac); border-color: rgba(180,140,186,.3); background: rgba(180,140,186,.07); }
+  .skill-tag.trv { color: var(--blue);  border-color: rgba(106,174,214,.3); background: rgba(106,174,214,.07); }
+
+  /* ── EDUCATION ── */
+  .edu-item {
+    padding: 1.4rem 0; border-bottom: 1px solid var(--border);
+    display: grid; grid-template-columns: 160px 1fr; gap: 2rem;
+  }
+  .edu-period { font-family: var(--ff-mono); font-size: .68rem; color: var(--muted); padding-top: .15rem; }
+  .edu-degree { font-family: var(--ff-display); font-size: 1rem; color: var(--heading); margin-bottom: .18rem; }
+  .edu-school  { font-family: var(--ff-mono); font-size: .72rem; color: var(--accent); margin-bottom: .45rem; }
+  .edu-note    { font-size: .82rem; color: var(--subtle); line-height: 1.7; }
+
+  /* ── SKILLS GRID ── */
+  .skills-outer { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 1.5rem; }
+  .skill-group h3 {
+    font-family: var(--ff-mono); font-size: .6rem;
+    letter-spacing: .2em; text-transform: uppercase;
+    color: var(--subtle); margin-bottom: .75rem;
+  }
+  .pill-row { display: flex; flex-wrap: wrap; gap: .35rem; }
+  .pill {
+    font-family: var(--ff-mono); font-size: .68rem;
+    padding: .22rem .6rem; border: 1px solid var(--border);
+    border-radius: 2px; color: var(--subtle);
+    transition: border-color .15s, color .15s;
+  }
+  .pill:hover { border-color: var(--accent); color: var(--accent); }
+
+  /* ── LANGUAGES ── */
+  .lang-row {
+    display: grid; grid-template-columns: 130px 1fr 120px;
+    align-items: center; gap: 1rem;
+    padding: .55rem 0; border-bottom: 1px solid var(--border);
+  }
+  .lang-name  { font-size: .88rem; color: var(--body); }
+  .lang-bar   { height: 1px; background: var(--border); }
+  .lang-fill  { height: 2px; margin-top: -1px; background: var(--accent); border-radius: 1px; }
+  .lang-level { font-family: var(--ff-mono); font-size: .62rem; color: var(--muted); text-align: right; }
+
+  /* ── CERTS ── */
+  .cert-row { display: flex; gap: .8rem; flex-wrap: wrap; }
+  .cert-card {
+    border: 1px solid var(--border); padding: .9rem 1.3rem;
+    background: var(--surface);
+  }
+  .cert-issuer { font-family: var(--ff-mono); font-size: .6rem; color: var(--accent); margin-bottom: .25rem; letter-spacing: .1em; }
+  .cert-name   { font-size: .85rem; color: var(--heading); }
+
+  /* ── HOBBIES ── */
+  .hobby-grid {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(148px, 1fr));
+    gap: 1px; border: 1px solid var(--border); background: var(--border);
+  }
+  .hobby-card { background: var(--surface); padding: 1.3rem 1.1rem; transition: background .15s; }
+  .hobby-card:hover { background: #1a1a1a; }
+  .hobby-icon  { font-size: 1.4rem; margin-bottom: .5rem; }
+  .hobby-name  { font-size: .9rem; color: var(--heading); margin-bottom: .25rem; font-weight: 400; }
+  .hobby-note  { font-size: .74rem; color: var(--muted); line-height: 1.6; }
+
+  /* ── TRAVEL ── */
+  .travel-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px,1fr)); gap: .8rem; }
+  .travel-card {
+    border: 1px solid var(--border); padding: 1.2rem;
+    background: var(--surface); transition: border-color .15s;
+  }
+  .travel-card:hover { border-color: var(--teal); }
+  .travel-region { font-family: var(--ff-mono); font-size: .58rem; letter-spacing: .2em; text-transform: uppercase; color: var(--teal); margin-bottom: .35rem; }
+  .travel-title  { font-family: var(--ff-display); font-size: .97rem; color: var(--heading); margin-bottom: .35rem; }
+  .travel-note   { font-size: .77rem; color: var(--muted); line-height: 1.65; }
+
+  /* ── FOOTER ── */
+  footer {
+    margin-top: 5rem; padding-top: 1.5rem; border-top: 1px solid var(--border);
+    display: flex; justify-content: space-between; flex-wrap: wrap; gap: .5rem;
+    font-family: var(--ff-mono); font-size: .6rem; color: var(--muted);
+  }
+
+  /* ── ANIMATIONS ── */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(16px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  /* ── PRINT ── */
+  @media print {
+    .toolbar, body::after { display: none !important; }
+    :root { --bg:#fff; --surface:#fff; --border:#ddd; --body:#444; --heading:#111; --accent:#8b6914; --teal:#2d7a68; --muted:#888; --subtle:#666; }
+    body { background:#fff; }
+    .exp-item.hidden { display: none !important; }
+    header { padding: 2rem 0 1.5rem; }
+    h1 { font-size: 3rem; }
+    section { margin-top: 2rem; }
+    .hobby-grid { background: #e8e8e8; }
+    .hobby-card { background: #f8f8f8; }
+  }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 580px) {
+    .exp-item, .edu-item { grid-template-columns: 1fr; gap: .4rem; }
+    .toolbar { gap: .4rem; }
+    h1 { font-size: 2.6rem; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="toolbar" id="toolbar">
+  <span class="toolbar-label">View as:</span>
+  <button class="filter-btn active" data-filter="all">Full Profile</button>
+  <button class="filter-btn" data-filter="pro">QA / Tech Job</button>
+  <button class="filter-btn" data-filter="vol">Volunteering</button>
+  <button class="filter-btn" data-filter="hob">Hobbies</button>
+  <button class="filter-btn" data-filter="trv">Travel</button>
+  <button class="print-btn" onclick="window.print()">⬒ Print / PDF</button>
+</nav>
+
+<div class="page">
+  <div id="root"><!-- rendered by JS --></div>
+</div>
+
+<script>
+// ═══════════════════════════════════════════════════
+//  RENDERER — reads data.json and builds the page
+//  You should never need to edit below this line.
+// ═══════════════════════════════════════════════════
+
+async function loadData() {
+  try {
+    const res = await fetch('./data.json');
+    if (!res.ok) throw new Error('Could not load data.json');
+    return res.json();
+  } catch(e) {
+    // fallback: try same-origin
+    console.error(e);
+    return null;
+  }
+}
+
+function tag(cls, content, extra = '') {
+  return `<span class="skill-tag ${cls}" ${extra}>${content}</span>`;
+}
+
+function tagColor(t) {
+  if (t === 'pro') return 'pro';
+  if (t === 'vol') return 'vol';
+  if (t === 'hob') return 'hob';
+  if (t === 'trv') return 'trv';
+  return '';
+}
+
+function renderExperience(items) {
+  return items.map((e, i) => {
+    const tagsAttr = e.tags.join(' ');
+    const bullets = e.bullets.length === 1
+      ? `<p>${e.bullets[0]}</p>`
+      : `<ul>${e.bullets.map(b => `<li>${b}</li>`).join('')}</ul>`;
+    const skillTags = (e.skills || []).map(s =>
+      `<span class="skill-tag ${tagColor(e.tags[0])}">${s}</span>`
+    ).join('');
+    return `
+    <div class="exp-item" data-tags="${tagsAttr}" style="animation-delay:${i * 0.05}s">
+      <div class="exp-meta">
+        <div class="exp-period">${e.period}</div>
+        <div class="exp-location">${e.location}</div>
+      </div>
+      <div>
+        <div class="exp-role">${e.role}</div>
+        <div class="exp-org">${e.org}</div>
+        <div class="exp-desc">${bullets}</div>
+        ${skillTags ? `<div class="skill-tags">${skillTags}</div>` : ''}
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function renderEducation(items) {
+  return items.map(e => `
+    <div class="edu-item">
+      <div class="edu-period">${e.period}</div>
+      <div>
+        <div class="edu-degree">${e.degree}</div>
+        <div class="edu-school">${e.school}</div>
+        ${e.note ? `<div class="edu-note">${e.note}</div>` : ''}
+      </div>
+    </div>`).join('');
+}
+
+function renderSkills(groups) {
+  return `<div class="skills-outer">${groups.map(g => `
+    <div class="skill-group">
+      <h3>${g.group}</h3>
+      <div class="pill-row">${g.items.map(i => `<span class="pill">${i}</span>`).join('')}</div>
+    </div>`).join('')}</div>`;
+}
+
+function renderLanguages(langs) {
+  return langs.map(l => `
+    <div class="lang-row">
+      <span class="lang-name">${l.name}</span>
+      <div class="lang-bar"><div class="lang-fill" style="width:${l.pct}%"></div></div>
+      <span class="lang-level">${l.level}</span>
+    </div>`).join('');
+}
+
+function renderCerts(certs) {
+  return `<div class="cert-row">${certs.map(c => `
+    <div class="cert-card">
+      <div class="cert-issuer">${c.issuer}</div>
+      <div class="cert-name">${c.name}</div>
+    </div>`).join('')}</div>`;
+}
+
+function renderHobbies(hobbies) {
+  return `<div class="hobby-grid">${hobbies.map(h => `
+    <div class="hobby-card">
+      <div class="hobby-icon">${h.icon}</div>
+      <div class="hobby-name">${h.name}</div>
+      <div class="hobby-note">${h.note}</div>
+    </div>`).join('')}</div>`;
+}
+
+function renderTravel(trips) {
+  return `<div class="travel-grid">${trips.map(t => `
+    <div class="travel-card">
+      <div class="travel-region">${t.region}</div>
+      <div class="travel-title">${t.title}</div>
+      <div class="travel-note">${t.note}</div>
+    </div>`).join('')}</div>`;
+}
+
+function renderProjects(projects) {
+  return projects.map((p, i) => {
+    const tagsAttr = p.tags.join(' ');
+    const skillTags = (p.skills || []).map(s =>
+      `<span class="skill-tag ${tagColor(p.tags[0])}">${s}</span>`
+    ).join('');
+    return `
+    <div class="exp-item" data-tags="${tagsAttr}" style="animation-delay:${i * 0.05}s">
+      <div class="exp-meta">
+        <div class="exp-period">${p.period}</div>
+        <div class="exp-location">${p.location}</div>
+      </div>
+      <div>
+        <div class="exp-role">${p.name}</div>
+        <div class="exp-org">${p.org}</div>
+        <div class="exp-desc"><p>${p.description}</p></div>
+        ${skillTags ? `<div class="skill-tags">${skillTags}</div>` : ''}
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function render(d) {
+  const contact = [
+    d.meta.email    ? `<a href="mailto:${d.meta.email}">${d.meta.email}</a>` : '',
+    d.meta.linkedin ? `<a href="${d.meta.linkedin}" target="_blank">LinkedIn</a>` : '',
+    d.meta.github   ? `<a href="${d.meta.github}"   target="_blank">GitHub</a>` : '',
+    d.meta.website  ? `<a href="${d.meta.website}"  target="_blank">${d.meta.website}</a>` : '',
+    `<span>${d.meta.location}</span>`
+  ].filter(Boolean).join('');
+
+  document.getElementById('root').innerHTML = `
+    <header>
+      <p class="header-eyebrow">Portfolio · ${d.meta.location}</p>
+      <h1>${d.meta.name.replace(' ', '<br>')}</h1>
+      <p class="tagline">${d.meta.title}</p>
+      <div class="contact-row">${contact}</div>
+    </header>
+
+    <section>
+      <p class="section-label">About</p>
+      <p class="about-text">${d.about}</p>
+    </section>
+
+    <section>
+      <p class="section-label">Experience</p>
+      ${renderExperience(d.experience)}
+    </section>
+
+    <section>
+      <p class="section-label">Education</p>
+      ${renderEducation(d.education)}
+    </section>
+
+    <section>
+      <p class="section-label">Skills &amp; Tools</p>
+      ${renderSkills(d.skills)}
+    </section>
+
+    <section>
+      <p class="section-label">Languages</p>
+      <div style="max-width:480px">${renderLanguages(d.languages)}</div>
+    </section>
+
+    <section>
+      <p class="section-label">Certifications</p>
+      ${renderCerts(d.certifications)}
+    </section>
+
+    <section data-section="hob">
+      <p class="section-label">Hobbies &amp; Creative</p>
+      ${renderHobbies(d.hobbies)}
+    </section>
+
+    <section data-section="trv">
+      <p class="section-label">Travel</p>
+      ${renderTravel(d.travel)}
+    </section>
+
+    ${d.projects && d.projects.length ? `
+    <section>
+      <p class="section-label">Projects</p>
+      ${renderProjects(d.projects)}
+    </section>` : ''}
+
+    <footer>
+      <span>${d.meta.name} · ${d.meta.title}</span>
+      <span>Last updated: ${d.meta.lastUpdated}</span>
+    </footer>
+  `;
+
+  initFilters();
+}
+
+function initFilters() {
+  const btns  = document.querySelectorAll('.filter-btn');
+  const items = document.querySelectorAll('.exp-item[data-tags]');
+  const hobSec = document.querySelector('[data-section="hob"]');
+  const trvSec = document.querySelector('[data-section="trv"]');
+
+  btns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      btns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const f = btn.dataset.filter;
+
+      items.forEach(item => {
+        const t = item.dataset.tags || '';
+        item.classList.toggle('hidden', f !== 'all' && !t.includes(f));
+      });
+
+      if (hobSec) hobSec.style.display = (f === 'all' || f === 'hob') ? '' : 'none';
+      if (trvSec) trvSec.style.display = (f === 'all' || f === 'trv') ? '' : 'none';
+    });
+  });
+}
+
+// ── BOOT ──
+loadData().then(d => {
+  if (d) {
+    render(d);
+    document.title = d.meta.name + ' — ' + d.meta.title;
+  } else {
+    document.getElementById('root').innerHTML =
+      '<p style="color:#c66;padding:4rem;font-family:monospace">⚠ Could not load data.json. Make sure both files are in the same folder and you\'re serving them via a local server or GitHub Pages.</p>';
+  }
+});
+</script>
+</body>
+</html>
