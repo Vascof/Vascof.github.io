@@ -1,16 +1,25 @@
 {
   "meta": {
     "name": "Vasco Ferreira",
-    "title": "Software Engineer · QA Specialist",
-    "location": "Nice, France",
+    "title": "Software Engineer · QA Specialist · Community Builder ",
+    "location": "Portugal",
     "email": "vasco.ferreira94@gmail.com",
     "linkedin": "https://www.linkedin.com/in/vascopferreira/",
     "github": "",
     "website": "",
-    "lastUpdated": "2025"
+    "lastUpdated": "February 2026"
   },
 
-  "about": "Electrical engineer turned QA specialist with a genuine passion for data, systems, and the craft of building reliable software. I care about quality at every level — in code, in people, and in experience. Outside the terminal I surf, write, play guitar, and have spent a year wandering South America with a backpack.",
+  "about": [
+    {
+      "text": "Electrical engineer turned QA specialist with a genuine passion for data, systems, and the craft of building reliable software. I care about quality at every level — in code, in people, and in experience. Outside the terminal I surf, write, play guitar, and have spent a year wandering South America with a backpack.",
+      "tags": ["pro", "tech", "com"]
+    },
+    {
+      "text": "There's a lot of things I would love to do. Some I already did and would like to keep improving, this is how I keep track.",
+      "tags": ["goal"]
+    }
+  ],
 
   "experience": [
     {
@@ -18,7 +27,7 @@
       "org": "Amadeus",
       "period": "Jun 2023 – Oct 2025",
       "location": "Nice, France",
-      "tags": ["pro"],
+      "tags": ["pro", "tech"],
       "bullets": [
         "Ensured end-to-end quality of the NDCX NDC API platform by defining and executing test plans within a SAFe/Scrum team.",
         "Performed exploratory, functional, and end-to-end testing of airline, GDS and payment integrations via APIs and UI flows.",
@@ -29,23 +38,11 @@
       "skills": ["Python", "Robot Framework", "CI/CD", "Jenkins", "API Testing", "SAFe/Scrum"]
     },
     {
-      "role": "Quality Assurance Engineer",
-      "org": "Runtime Revolution",
-      "period": "Apr 2023 – Jun 2023",
-      "location": "Lisbon, Portugal",
-      "tags": ["pro"],
-      "bullets": [
-        "Browser automation with no-code tools and Python, applying ISTQB techniques to ensure optimal web app functionality.",
-        "QA strategy design, Agile methodologies, and efficient bug tracking."
-      ],
-      "skills": ["Python", "Agile", "ISTQB", "Browser Automation"]
-    },
-    {
       "role": "Software Developer Engineer in Test",
       "org": "Critical Software",
       "period": "Dec 2020 – May 2022",
       "location": "Coimbra, Portugal",
-      "tags": ["pro"],
+      "tags": ["pro", "tech"],
       "bullets": [
         "Functional, integration, and regression testing on embedded software systems for automotive ECUs.",
         "Testing platform for Autonomous Driving (BMW / AUTOSAR) using TDFNext Framework with Hardware-in-Loop (HiL) simulation.",
@@ -53,13 +50,28 @@
         "Agile environment; collaborated across developers, project managers, and clients to report testing progress and risks."
       ],
       "skills": ["C++", "Embedded Systems", "Automotive ECU", "HiL", "AUTOSAR"]
+    }
+  ],
+
+  "interships or short period": [
+    {
+      "role": "Quality Assurance Engineer",
+      "org": "Runtime Revolution",
+      "period": "Apr 2023 – Jun 2023",
+      "location": "Lisbon, Portugal",
+      "tags": ["pro", "tech"],
+      "bullets": [
+        "Browser automation with no-code tools and Python, applying ISTQB techniques to ensure optimal web app functionality.",
+        "QA strategy design, Agile methodologies, and efficient bug tracking."
+      ],
+      "skills": ["Python", "Agile", "ISTQB", "Browser Automation"]
     },
     {
       "role": "Research Assistant – Data Analyst",
       "org": "Institute of Systems and Robotics, Univ. Coimbra",
       "period": "Jun 2019 – Aug 2020",
       "location": "Coimbra, Portugal",
-      "tags": ["pro"],
+      "tags": ["pro", "tech"],
       "bullets": [
         "Applied computer vision and machine learning to recognise and authenticate images using advanced image descriptors.",
         "Technology creates unique stochastic markings to authenticate high-end products — currently deployed in tobacco package stamps.",
@@ -68,11 +80,22 @@
       "skills": ["Python", "Computer Vision", "Machine Learning", "OpenCV"]
     },
     {
-      "role": "Web Developer — Summer Internship",
+      "role": "Marketing coordinator",
+      "org": "Diva Beauty Center",
+      "period": "May 2016 – Nov 2016",
+      "location": "Ourém, Portugal",
+      "tags": ["pro", "tech"],
+      "bullets": [
+        "Created and managed marketing campaigns, social media content, and website copywriting."
+      ],
+      "skills": ["Marketing", "Content Creation", "Social Media"]
+    },
+    {
+      "role": "Web Developer",
       "org": "SPEAK",
       "period": "Aug 2015",
       "location": "Leiria, Portugal",
-      "tags": ["pro"],
+      "tags": ["pro", "tech", "com"],
       "bullets": [
         "Developed front-end and back-end features on their web application using the OutSystems Platform.",
         "UI improvements in HTML and CSS; collaborated with multidisciplinary teams on project planning."
@@ -84,7 +107,7 @@
       "org": "Erasmus Student Network (ESN) Coimbra",
       "period": "Aug 2019 – Jul 2020",
       "location": "Coimbra, Portugal",
-      "tags": ["vol"],
+      "tags": ["pro", "com"],
       "bullets": [
         "Organised all logistics for trips and events across Portugal for international students — accommodations, transport, activities.",
         "Provided training and onboarding for new members."
@@ -94,42 +117,20 @@
     {
       "role": "Vice-President",
       "org": "Board of European Students of Technology (BEST)",
-      "period": "Jul 2015 – Sept 2015",
-      "location": "Leiria, Portugal",
-      "tags": ["vol"],
+      "period": "Jul 2014 – Sept 2015",
+      "location": "Coimbra, Portugal",
+      "tags": ["pro", "com"],
       "bullets": [
         "Strategic communication between BEST and its stakeholders: university, companies, students, and media.",
         "Social media content creation, event planning, financial oversight, and organisational governance."
       ],
       "skills": ["Leadership", "Strategy", "Communications", "Governance"]
-    },
-    {
-      "role": "Marketing Director — Part-time",
-      "org": "Diva Beauty Center",
-      "period": "May 2016 – Nov 2016",
-      "location": "Ourém, Portugal",
-      "tags": ["vol", "hob"],
-      "bullets": [
-        "Created and managed marketing campaigns, social media content, and website copywriting."
-      ],
-      "skills": ["Marketing", "Content Creation", "Social Media"]
-    },
-    {
-      "role": "Competitor — European BEST Engineering Competition (EBEC)",
-      "org": "BEST",
-      "period": "2013 – 2014",
-      "location": "Coimbra, Portugal",
-      "tags": ["pro", "vol"],
-      "bullets": [
-        "Pan-European student engineering competition. Teams of 4 solve complex technical challenges across local, regional, and European finals."
-      ],
-      "skills": ["Engineering", "Teamwork", "Problem Solving"]
     }
   ],
 
   "education": [
     {
-      "degree": "Unfinished Master's — Electrical & Computer Engineering",
+      "degree": "Master's — Electrical & Computer Engineering (academic)",
       "school": "University of Coimbra",
       "period": "2018 – 2021",
       "note": "Computer Architecture, Computer Vision, Digital Fabrication, MEMS, High Performance Computing, Real-Time Systems, Systems Engineering."
@@ -144,26 +145,35 @@
       "degree": "Secondary School — Sciences & Technologies",
       "school": "Centro de Estudos de Fátima",
       "period": "2004 – 2013",
-      "note": ""
+      "note": "Secondary Education Diploma – Science and Technology"
     }
   ],
 
   "skills": [
     {
       "group": "Languages",
-      "items": ["Python", "C++", "C", "SQL", "HTML/CSS", "CUDA", "Assembly", "VHDL", "Matlab"]
+      "items": ["Python", "C++", "C", "SQL", "HTML/CSS", "CUDA", "Assembly", "VHDL", "Matlab"],
+      "tags": ["pro", "tech"]
     },
     {
       "group": "Testing",
-      "items": ["Robot Framework", "SOAPUI", "Postman", "ISTQB", "Pytest", "Jenkins", "CI/CD", "Octane"]
+      "items": ["Robot Framework", "SOAPUI", "Postman", "ISTQB", "Pytest", "Jenkins", "CI/CD", "Octane"],
+      "tags": ["pro", "tech"]
     },
     {
       "group": "Platforms & Tools",
-      "items": ["Linux", "Git", "Jira", "Trello", "OutSystems", "Arduino", "Visual Studio", "LaTeX"]
+      "items": ["Linux", "Git", "Jira", "Trello", "OutSystems", "Arduino", "Visual Studio", "LaTeX"],
+      "tags": ["pro", "tech"]
     },
     {
       "group": "Protocols & Systems",
-      "items": ["CAN bus", "FlexRay", "SOME/IP", "Ethernet", "REST API", "AUTOSAR", "HiL", "JSON"]
+      "items": ["CAN bus", "FlexRay", "SOME/IP", "Ethernet", "REST API", "AUTOSAR", "HiL", "JSON"],
+      "tags": ["pro", "tech"]
+    },
+    {
+      "group": "Soft Skills",
+      "items": ["Leadership", "Facilitator", "Events Manager"],
+      "tags": ["pro", "com"]
     }
   ],
 
@@ -217,16 +227,19 @@
     {
       "region": "South America",
       "title": "1-Year Solo Trip",
+      "tags": ["pro", "com"],
       "note": "Travelled solo across South America for a full year with a backpack. Add the countries you visited here — Colombia, Peru, Argentina, Bolivia, Brazil, Chile, Ecuador... Immersed in local cultures, languages, and landscapes."
     },
     {
       "region": "Europe",
       "title": "ESN Coordination Trips",
+      "tags": ["pro", "com"],
       "note": "Organised and led cultural trips across Portugal for international Erasmus students."
     },
     {
       "region": "Currently Based",
       "title": "Nice, France",
+      "tags": ["pro", "com"],
       "note": "Living and working on the French Riviera since 2023. Exploring Southern Europe on weekends."
     }
   ],
@@ -237,9 +250,223 @@
       "org": "Side Project",
       "period": "2017",
       "location": "Coimbra",
-      "tags": ["pro", "hob"],
+      "tags": ["pro", "tech"],
       "description": "Application that records telemetry data from mobile robots via TCP/IP connections.",
       "skills": ["Networking", "Embedded Systems"]
+    },
+    {
+      "role": "Competitor — European BEST Engineering Competition (EBEC)",
+      "org": "BEST",
+      "period": "2013 – 2014",
+      "location": "Coimbra, Portugal",
+      "tags": ["pro", "com"],
+      "bullets": [
+        "Pan-European student engineering competition. Teams of 4 solve complex technical challenges across local, regional, and European finals."
+      ],
+      "skills": ["Engineering", "Teamwork", "Problem Solving"]
+    }
+  ],
+
+  "impossibleList": [
+    {
+      "bucket": "Water & Ocean",
+      "icon": "🌊",
+      "tag": ["goal"],
+      "items": [
+        {
+          "title": "Get Open Water certification",
+          "done": true,
+          "note": "Learned to dive during in Malapascoa, the Philipines",
+          "link": ""
+        },
+        {
+          "title": "Get Advanced Open Water certification",
+          "done": true,
+          "note": "Got my advanced ceritifcation in Gili T, Lombok, Indonesia",
+          "link": ""
+        },
+        {
+          "title": "Diving in Komodo and Raj Ampat, Indonesia",
+          "done": false,
+          "note": "Diving in one of the most beautiful places on earth is some I would love to do",
+          "link": ""
+        },
+        {
+          "title": "Learn to surf",
+          "done": true,
+          "note": "Atlantic waves, Portuguese coast.",
+          "link": ""
+        },
+        {
+          "title": "Surf in all continets",
+          "done": false,
+          "note": "Missing America, Africa and Oceania",
+          "link": ""
+        },
+        {
+          "title": "Learn to kitesurf",
+          "done": false,
+          "note": "Flying with a board is like a childhoodream never fullfilled",
+          "link": ""
+        },
+        {
+          "title": "Learn to skate surf",
+          "done": false,
+          "note": "Land training for the ocean.",
+          "link": ""
+        },
+        {
+          "title": "Learn to sail",
+          "done": false,
+          "note": "A boat and an open horizon. Evetually sail in the caribe",
+          "link": ""
+        }
+      ]
+    },
+    {
+      "bucket": "Mountains & Sky",
+      "icon": "🏔️",
+      "items": [
+        {
+          "title": "Learn to snowboard",
+          "done": true,
+          "note": "Learned in France",
+          "link": ""
+        },
+        {
+          "title": "Snowboard in Japan",
+          "done": true,
+          "note": "Acomplished 2 months ago",
+          "link": ""
+        },
+        {
+          "title": "Try paragliding",
+          "done": false,
+          "note": "Feel the wind, see the world from above.",
+          "link": ""
+        },
+        {
+          "title": "Watch the Aurora Borealis",
+          "done": false,
+          "note": "Northern lights somewhere wild.",
+          "link": ""
+        }
+      ]
+    },
+    {
+      "bucket": "Pilgrimage & Slow Travel",
+      "icon": "🥾",
+      "items": [
+        {
+          "title": "Walk the Camino de Santiago",
+          "done": true,
+          "note": "Did the Portuguese route. Changed something in me.",
+          "link": ""
+        },
+        {
+          "title": "Walk the Camino again",
+          "done": false,
+          "note": "A different route, starting from east europe.",
+          "link": ""
+        },
+        {
+          "title": "Do a silent retreat in Nepal",
+          "done": false,
+          "note": "Vipassana or similar. 10 days of silence.",
+          "link": ""
+        }
+      ]
+    },
+    {
+      "bucket": "Music & Creative",
+      "icon": "🎵",
+      "items": [
+        {
+          "title": "Learn to play guitar",
+          "done": true,
+          "note": "Self-taught. More songs than Wonderwall.",
+          "link": ""
+        },
+        {
+          "title": "Write and compose an original song",
+          "done": false,
+          "note": "Words and melody, start to finish.",
+          "link": ""
+        },
+        {
+          "title": "Learn a full song on piano",
+          "done": false,
+          "note": "One song, played properly.",
+          "link": ""
+        },
+        {
+          "title": "Start a podcast",
+          "done": true,
+          "note": "Conversations worth recording.",
+          "link": ""
+        }
+      ]
+    },
+    {
+      "bucket": "Languages",
+      "icon": "🗣️",
+      "items": [
+        {
+          "title": "Become fluent in Spanish",
+          "done": true,
+          "note": "A year in South America took care of that.",
+          "link": ""
+        },
+        {
+          "title": "Learning basic French",
+          "done": true,
+          "note": "Living in Nice made me be able to communicate",
+          "link": ""
+        },
+        {
+          "title": "Read a full book in French",
+          "done": false,
+          "note": "In Progress. Currently reading Changer l'eau de fleurs",
+          "link": ""
+        },
+        {
+          "title": "Read a second book in French",
+          "done": false,
+          "note": "One is a start. Two is a habit.",
+          "link": ""
+        }
+      ]
+    },
+    {
+      "bucket": "Animals & Land",
+      "icon": "🐴",
+      "items": [
+        {
+          "title": "Learn to ride a horse",
+          "done": false,
+          "note": "Something grounding and empowering about it.",
+          "link": ""
+        }
+      ]
+    }
+  ],
+
+  "tagging": [
+    {
+      "name": "Full Profile",
+      "tags": "pro"
+    },
+    {
+      "name": "QA and Technology",
+      "tags": "tech"
+    },
+    {
+      "name": "Community",
+      "tags": "com"
+    },
+    {
+      "name": "Impossible List",
+      "tags": "goal"
     }
   ]
 }
