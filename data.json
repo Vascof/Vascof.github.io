@@ -12,11 +12,11 @@
 
   "about": [
     {
-      "text": "Electrical engineer turned QA engineer with a genuine passion for data, systems, and the craft of building reliable software. I care about quality at every level — in code, in people, and in experience. Outside of the terminal I search for interesitng people and experiences",
+      "text": "Electrical engineer turned QA engineer with a genuine passion for data, systems, and the craft of building reliable software. I care about quality at every level — in code, in people, and in experience. Outside of the terminal I search for interesting people and experiences.",
       "tags": ["pro", "tech", "com"]
     },
     {
-      "text": "There's a lot of things I would love to do. Some I already did and would like to keep improving, this is how I keep track.",
+      "text": "There are a lot of things I would love to do. Some I have already done and would like to keep improving — this is how I keep track.",
       "tags": ["goal"]
     }
   ],
@@ -97,7 +97,7 @@
       "location": "Leiria, Portugal",
       "tags": ["pro", "tech", "com"],
       "bullets": [
-        "Speak is a non-profit organization focused on breaking language barrier between communities by providing a platform for people to have an easier integration.",
+        "SPEAK is a non-profit organization focused on breaking language barriers between communities by providing a platform for easier integration.",
         "Developed front-end and back-end features on their web application using the OutSystems Platform.",
         "UI improvements in HTML and CSS; collaborated with multidisciplinary teams on project planning."
       ],
@@ -153,7 +153,7 @@
     },
     {
       "degree": "Non-formal Education",
-      "school": "Corpo Nacional de Escutas - Nacional Body of the Scouts movement",
+      "school": "Corpo Nacional de Escutas — National Body of the Scout Movement",
       "period": "2001 – 2014",
       "note": "Non-formal education in the Scout Movement rooted in nature, service to local communities, leadership development, outdoor survival, constructive dialogue, and values-driven action.",
       "tags": ["com"]
@@ -262,15 +262,15 @@
     },
     {
       "region": "Asia",
-      "title": "4 months backapcking",
+      "title": "4 Months Backpacking",
       "tags": ["pro", "com"],
-      "note": "Another backpacking trip: Snowboarding in Japan, diving in the phlipines, surfing in Sri Lanka, party in Tailand and eating in India"
+      "note": "Another backpacking trip: snowboarding in Japan, diving in the Philippines, surfing in Sri Lanka, partying in Thailand, and eating my way through India."
     },
     {
       "region": "Europe",
       "title": "3 week summer courses",
       "tags": ["pro", "com"],
-      "note": "Studying a technology topic with a group of 30 strangers in an European city.  Self driving cars - Ljubliana and Enterpreneurship - Skopje"
+      "note": "Studying a technology topic with a group of 30 strangers in a European city. Self-driving cars in Ljubljana and Entrepreneurship in Skopje."
     },
     {
       "region": "France",
@@ -312,13 +312,13 @@
         {
           "title": "Get Open Water certification",
           "done": true,
-          "note": "Learned to dive during in Malapascoa, the Philipines",
+          "note": "Learned to dive in Malapascua, the Philippines.",
           "link": ""
         },
         {
           "title": "Get Advanced Open Water certification",
           "done": true,
-          "note": "Got my advanced ceritifcation in Gili T, Lombok, Indonesia",
+          "note": "Got my advanced certification in Gili T, Lombok, Indonesia.",
           "link": ""
         },
         {
@@ -330,19 +330,19 @@
         {
           "title": "Diving in Komodo and Raj Ampat, Indonesia",
           "done": false,
-          "note": "Diving in one of the most beautiful places on earth is some I would love to do",
+          "note": "Diving in one of the most beautiful places on earth — something I would love to do.",
           "link": ""
         },
         {
-          "title": "Surf in all continets",
+          "title": "Surf on all continents",
           "done": false,
-          "note": "Missing America, Africa and Oceania",
+          "note": "Missing the Americas, Africa, and Oceania.",
           "link": ""
         },
         {
           "title": "Learn to kitesurf",
           "done": false,
-          "note": "Flying with a board is like a childhoodream never fullfilled",
+          "note": "Flying with a board is a childhood dream never fulfilled.",
           "link": ""
         },
         {
@@ -354,7 +354,7 @@
         {
           "title": "Learn how to sail",
           "done": false,
-          "note": "A boat and an open horizon. Evetually sail in the caribe",
+          "note": "A boat and an open horizon. Eventually sail in the Caribbean.",
           "link": ""
         }
       ]
@@ -372,7 +372,7 @@
         {
           "title": "Snowboard in Japan",
           "done": true,
-          "note": "Acomplished 2 months ago",
+          "note": "Accomplished two months ago.",
           "link": ""
         },
         {
@@ -402,7 +402,7 @@
         {
           "title": "Walk the Camino again",
           "done": false,
-          "note": "A different route, starting from east europe.",
+          "note": "A different route, starting from Eastern Europe.",
           "link": ""
         },
         {
@@ -414,7 +414,7 @@
         {
           "title": "Do a road trip with a van and a dog",
           "done": false,
-          "note": "Experience solitude, reflection and love while discovering the world",
+          "note": "Experience solitude, reflection, and love while discovering the world.",
           "link": ""
         }
       ]
@@ -462,25 +462,25 @@
         {
           "title": "Learning basic French",
           "done": true,
-          "note": "Living in Nice made me be able to communicate but still hard to say jokes.",
+          "note": "Living in Nice got me to a conversational level — though jokes are still a work in progress.",
           "link": ""
         },
         {
           "title": "Read a full book in French",
           "done": false,
-          "note": "In Progress. Currently reading Changer l'eau de fleurs",
+          "note": "In progress. Currently reading Changer l'eau des fleurs.",
           "link": ""
         },
         {
-          "title": "Understand basic chinese",
+          "title": "Understand basic Chinese",
           "done": false,
           "note": "One is a start. Two is a habit.",
           "link": ""
         },
         {
-          "title": "Introduction to Chinese lanaguage and culture2",
+          "title": "Introduction to Chinese language and culture",
           "done": false,
-          "note": "The dream is one day to be able to speak all the offical languages of the UN",
+          "note": "The dream is to one day speak all the official languages of the UN.",
           "link": ""
         }
       ]
@@ -492,36 +492,36 @@
         {
           "title": "Try ayahuasca",
           "done": true,
-          "note": "One of the most transformative experiences of my life",
+          "note": "One of the most transformative experiences of my life.",
           "link": ""
         },
         {
           "title": "Make a friend from each of main faith systems",
           "done": false,
-          "note": "In progress. Cristianity, Islam, Hinduism, Judaism, Agnostics, Atheits, and more to come",
+          "note": "In progress. Christianity, Islam, Hinduism, Judaism, Agnostics, Atheists, and more to come.",
           "link": ""
         },
         {
           "title": "Visit and experience a culture in each of the world continents",
           "done": false,
-          "note": "In progress. Missing Oceania",
+          "note": "In progress. Missing Oceania.",
           "link": ""
         }
       ]
     },
     {
-      "bucket": "Enterpreneurship",
+      "bucket": "Entrepreneurship",
       "icon": "💡",
       "tag": ["goal"],
       "items": [
         {
           "title": "Volunteer in a community based business",
           "done": true,
-          "note": "Spend some time voluntering in monetizable community to learn",
+          "note": "Spent some time volunteering in a monetisable community to learn.",
           "link": ""
         },
         {
-          "title": "Facilitate business development arround community building",
+          "title": "Facilitate business development around community building",
           "done": true,
           "note": "Encontrar o meu ikigai",
           "link": ""
