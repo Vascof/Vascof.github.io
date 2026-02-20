@@ -396,7 +396,6 @@ function optLink(url, label) {
 
 function bulletsHTML(bullets) {
   if (!bullets || !bullets.length) return '';
-  if (bullets.length === 1) return `<p>${bullets[0]}</p>`;
   return `<ul>${bullets.map(b => `<li>${b}</li>`).join('')}</ul>`;
 }
 
@@ -583,7 +582,8 @@ function render(d) {
 
   // Detect which sections have at least one item per tag
   // We collect all tag-sets needed per section
-  const hasTravelTags = (d.travel || []).some(t => normTags(t.tags).length > 0);
+  const intlItems = d.international || d.travel || [];
+  const hasIntlTags = intlItems.some(t => normTags(t.tags).length > 0);
 
   document.getElementById('root').innerHTML = `
 
@@ -643,11 +643,11 @@ function render(d) {
       ${renderHobbies(d.hobbies)}
     </section>
 
-    <!-- TRAVEL -->
-    ${hasTravelTags ? `
-    <section id="sec-travel" data-section-tags="${d.travel.map(t=>normTags(t.tags).join(' ')).join(' ')}">
-      <p class="section-label">Travel</p>
-      ${renderTravel(d.travel)}
+    <!-- INTERNATIONAL EXPERIENCES -->
+    ${hasIntlTags ? `
+    <section id="sec-international" data-section-tags="${intlItems.map(t=>normTags(t.tags).join(' ')).join(' ')}">
+      <p class="section-label">International Experiences</p>
+      ${renderTravel(intlItems)}
     </section>` : ''}
 
     <!-- PROJECTS -->

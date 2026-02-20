@@ -1,7 +1,7 @@
 {
   "meta": {
     "name": "Vasco Ferreira",
-    "title": "Software Engineer · QA Specialist · Community Builder ",
+    "title": "Software QA Engineer · Community Builder · Human",
     "location": "Portugal",
     "email": "vasco.ferreira94@gmail.com",
     "linkedin": "https://www.linkedin.com/in/vascopferreira/",
@@ -12,7 +12,7 @@
 
   "about": [
     {
-      "text": "Electrical engineer turned QA specialist with a genuine passion for data, systems, and the craft of building reliable software. I care about quality at every level — in code, in people, and in experience. Outside the terminal I surf, write, play guitar, and have spent a year wandering South America with a backpack.",
+      "text": "Electrical engineer turned QA engineer with a genuine passion for data, systems, and the craft of building reliable software. I care about quality at every level — in code, in people, and in experience. Outside of the terminal I search for interesitng people and experiences",
       "tags": ["pro", "tech", "com"]
     },
     {
@@ -204,32 +204,52 @@
     {
       "icon": "🏄",
       "name": "Surfing",
-      "note": "Ocean lover. Atlantic waves, Portuguese coast."
+      "note": "Ocean lover. Not sure it likes me back."
     },
     {
       "icon": "🎸",
       "name": "Guitar",
-      "note": "Self-taught. Fingerpicking, chords, songwriting."
+      "note": "Campfire certified."
     },
     {
       "icon": "✍️",
       "name": "Writing & Journaling",
-      "note": "Daily journaling practice. Reflective writing and storytelling."
+      "note": "Daily journaling practice. Reflective writing, life audits, occasional existential plot twists."
     },
     {
       "icon": "📚",
       "name": "Reading",
-      "note": "Philosophy, tech, travel literature, and fiction."
+      "note": "Philosophy, tech, travel literature, and fiction. Trying to outread my own confusion."
     },
     {
       "icon": "⛺",
       "name": "Camping & Outdoors",
-      "note": "14 years as a scout. Mountains, forests, bivouacking."
+      "note": "14 years as a scout. Mountains, forests, survival skills, and questionable cooking experiments."
     },
     {
       "icon": "✈️",
       "name": "Traveling",
-      "note": "Solo travel advocate. Backpack over suitcase, always."
+      "note": "Backpack over suitcase, always. Collecting cultures more than souvenirs."
+    },
+    {
+      "icon": "🤿",
+      "name": "Diving",
+      "note": "Exploring the underwater world and ‘why am I breathing like Darth Vader?’ "
+    },
+    {
+      "icon": "🏂",
+      "name": "Snowboarding",
+      "note": "Sliding down frozen mountains on purpose."
+    },
+    {
+      "icon": "🏐",
+      "name": "Beach Volley",
+      "note": "My way of relaxing at the beach."
+    },
+    {
+      "icon": "🧗",
+      "name": "Bouldering",
+      "note": "Solving rock puzzles one fall at a time."
     }
   ],
 
@@ -244,13 +264,19 @@
       "region": "Asia",
       "title": "4 months backapcking",
       "tags": ["pro", "com"],
-      "note": "Snowboarding in Japan, diving in the phlipines, surfing in Sri Lanka, party in Tailand and eating in India"
+      "note": "Another backpacking trip: Snowboarding in Japan, diving in the phlipines, surfing in Sri Lanka, party in Tailand and eating in India"
+    },
+    {
+      "region": "Europe",
+      "title": "3 week summer courses",
+      "tags": ["pro", "com"],
+      "note": "Studying a technology topic with a group of 30 strangers in an European city.  Self driving cars - Ljubliana and Enterpreneurship - Skopje"
     },
     {
       "region": "France",
-      "title": "Nice, France",
+      "title": "Working abroad for 3 years",
       "tags": ["pro", "com"],
-      "note": "Living and working on the French Riviera for 3 years. Learned french and independence."
+      "note": "Living and working abroad in a country I do not dominate the language."
     }
   ],
 
@@ -265,8 +291,8 @@
       "skills": ["Networking", "Embedded Systems"]
     },
     {
-      "role": "Competitor — European BEST Engineering Competition (EBEC)",
-      "org": "BEST",
+      "role": "Competition — European BEST Engineering Competition (EBEC)",
+      "org": "Board of European Students of Technology (BEST)",
       "period": "2013 – 2014",
       "location": "Coimbra, Portugal",
       "tags": ["pro", "com"],
