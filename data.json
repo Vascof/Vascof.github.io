@@ -57,7 +57,7 @@
     {
       "role": "Quality Assurance Engineer",
       "org": "Runtime Revolution",
-      "period": "Apr 2023 – Jun 2023",
+      "period": "Apr 2023 – May 2023",
       "location": "Lisbon, Portugal",
       "tags": ["pro", "tech"],
       "bullets": [
@@ -97,6 +97,7 @@
       "location": "Leiria, Portugal",
       "tags": ["pro", "tech", "com"],
       "bullets": [
+        "Speak is a non-profit organization focused on breaking language barrier between communities by providing a platform for people to have an easier integration.",
         "Developed front-end and back-end features on their web application using the OutSystems Platform.",
         "UI improvements in HTML and CSS; collaborated with multidisciplinary teams on project planning."
       ],
@@ -133,19 +134,29 @@
       "degree": "Master's — Electrical & Computer Engineering (academic)",
       "school": "University of Coimbra",
       "period": "2018 – 2021",
-      "note": "Computer Architecture, Computer Vision, Digital Fabrication, MEMS, High Performance Computing, Real-Time Systems, Systems Engineering."
+      "note": "Computer Architecture, Computer Vision, Digital Fabrication, MEMS, High Performance Computing, Real-Time Systems, Systems Engineering.",
+      "tags": ["pro", "tech"]
     },
     {
       "degree": "Bachelor's — Electrical Engineering",
       "school": "University of Coimbra",
       "period": "2012 – 2018",
-      "note": "Comprehensive engineering sciences with hands-on laboratory and project-oriented learning."
+      "note": "Comprehensive engineering sciences with hands-on laboratory and project-oriented learning.",
+      "tags": ["pro", "tech"]
     },
     {
       "degree": "Secondary School — Sciences & Technologies",
       "school": "Centro de Estudos de Fátima",
-      "period": "2004 – 2013",
-      "note": "Secondary Education Diploma – Science and Technology"
+      "period": "2009 – 2012",
+      "note": "Secondary Education Diploma – Science and Technology",
+      "tags": ["pro", "tech"]
+    },
+    {
+      "degree": "Non-formal Education",
+      "school": "Corpo Nacional de Escutas - Nacional Body of the Scouts movement",
+      "period": "2001 – 2014",
+      "note": "Non-formal education in the Scout Movement rooted in nature, service to local communities, leadership development, outdoor survival, constructive dialogue, and values-driven action.",
+      "tags": ["com"]
     }
   ],
 
@@ -172,22 +183,21 @@
     },
     {
       "group": "Soft Skills",
-      "items": ["Leadership", "Facilitator", "Events Manager"],
+      "items": ["Leadership", "Facilitator", "Events Manager", "Rituals"],
       "tags": ["pro", "com"]
     }
   ],
 
   "languages": [
-    { "name": "Portuguese", "level": "Native",            "pct": 100 },
-    { "name": "English",    "level": "C1 / FCE",          "pct": 95  },
-    { "name": "Spanish",    "level": "Full Professional",  "pct": 75  },
-    { "name": "French",     "level": "Elementary",         "pct": 30  },
-    { "name": "German",     "level": "Beginner",           "pct": 10  }
+    { "name": "Portuguese", "level": "Native",             "pct": 100 },
+    { "name": "English",    "level": "Full Professional",  "pct": 95  },
+    { "name": "Spanish",    "level": "Full Professional",  "pct": 95  },
+    { "name": "French",     "level": "Elementary",         "pct": 30  }
   ],
 
   "certifications": [
     { "issuer": "ISTQB",    "name": "Certified Tester Foundation Level" },
-    { "issuer": "Cambridge","name": "FCE — First Certificate in English" }
+    { "issuer": "Cambridge & IELTS","name": "FCE — First Certificate in English" }
   ],
 
   "hobbies": [
@@ -223,24 +233,24 @@
     }
   ],
 
-  "travel": [
+  "international": [
     {
       "region": "South America",
       "title": "1-Year Solo Trip",
       "tags": ["pro", "com"],
-      "note": "Travelled solo across South America for a full year with a backpack. Add the countries you visited here — Colombia, Peru, Argentina, Bolivia, Brazil, Chile, Ecuador... Immersed in local cultures, languages, and landscapes."
+      "note": "Travelled solo across South America for a full year with a backpack. Immersed in local cultures, languages, and landscapes."
     },
     {
-      "region": "Europe",
-      "title": "ESN Coordination Trips",
+      "region": "Asia",
+      "title": "4 months backapcking",
       "tags": ["pro", "com"],
-      "note": "Organised and led cultural trips across Portugal for international Erasmus students."
+      "note": "Snowboarding in Japan, diving in the phlipines, surfing in Sri Lanka, party in Tailand and eating in India"
     },
     {
-      "region": "Currently Based",
+      "region": "France",
       "title": "Nice, France",
       "tags": ["pro", "com"],
-      "note": "Living and working on the French Riviera since 2023. Exploring Southern Europe on weekends."
+      "note": "Living and working on the French Riviera for 3 years. Learned french and independence."
     }
   ],
 
@@ -286,15 +296,15 @@
           "link": ""
         },
         {
-          "title": "Diving in Komodo and Raj Ampat, Indonesia",
-          "done": false,
-          "note": "Diving in one of the most beautiful places on earth is some I would love to do",
+          "title": "Learn how to surf",
+          "done": true,
+          "note": "Atlantic waves, Portuguese coast.",
           "link": ""
         },
         {
-          "title": "Learn to surf",
-          "done": true,
-          "note": "Atlantic waves, Portuguese coast.",
+          "title": "Diving in Komodo and Raj Ampat, Indonesia",
+          "done": false,
+          "note": "Diving in one of the most beautiful places on earth is some I would love to do",
           "link": ""
         },
         {
@@ -316,7 +326,7 @@
           "link": ""
         },
         {
-          "title": "Learn to sail",
+          "title": "Learn how to sail",
           "done": false,
           "note": "A boat and an open horizon. Evetually sail in the caribe",
           "link": ""
@@ -374,6 +384,12 @@
           "done": false,
           "note": "Vipassana or similar. 10 days of silence.",
           "link": ""
+        },
+        {
+          "title": "Do a road trip with a van and a dog",
+          "done": false,
+          "note": "Experience solitude, reflection and love while discovering the world",
+          "link": ""
         }
       ]
     },
@@ -401,7 +417,7 @@
         },
         {
           "title": "Start a podcast",
-          "done": true,
+          "done": false,
           "note": "Conversations worth recording.",
           "link": ""
         }
@@ -420,7 +436,7 @@
         {
           "title": "Learning basic French",
           "done": true,
-          "note": "Living in Nice made me be able to communicate",
+          "note": "Living in Nice made me be able to communicate but still hard to say jokes.",
           "link": ""
         },
         {
@@ -430,21 +446,58 @@
           "link": ""
         },
         {
-          "title": "Read a second book in French",
+          "title": "Understand basic chinese",
           "done": false,
           "note": "One is a start. Two is a habit.",
+          "link": ""
+        },
+        {
+          "title": "Introduction to Chinese lanaguage and culture2",
+          "done": false,
+          "note": "The dream is one day to be able to speak all the offical languages of the UN",
           "link": ""
         }
       ]
     },
     {
-      "bucket": "Animals & Land",
-      "icon": "🐴",
+      "bucket": "Spirituality, Faith and Diversity",
+      "icon": "🪷",
       "items": [
         {
-          "title": "Learn to ride a horse",
+          "title": "Try ayahuasca",
+          "done": true,
+          "note": "One of the most transformative experiences of my life",
+          "link": ""
+        },
+        {
+          "title": "Make a friend from each of main faith systems",
           "done": false,
-          "note": "Something grounding and empowering about it.",
+          "note": "In progress. Cristianity, Islam, Hinduism, Judaism, Agnostics, Atheits, and more to come",
+          "link": ""
+        },
+        {
+          "title": "Visit and experience a culture in each of the world continents",
+          "done": false,
+          "note": "In progress. Missing Oceania",
+          "link": ""
+        }
+      ]
+    },
+    {
+      "bucket": "Enterpreneurship",
+      "icon": "💡",
+      "tag": ["goal"],
+      "items": [
+        {
+          "title": "Volunteer in a community based business",
+          "done": true,
+          "note": "Spend some time voluntering in monetizable community to learn",
+          "link": ""
+        },
+        {
+          "title": "Facilitate business development arround community building",
+          "done": true,
+          "note": "Encontrar o meu ikigai",
           "link": ""
         }
       ]
@@ -461,7 +514,7 @@
       "tags": "tech"
     },
     {
-      "name": "Community",
+      "name": "Community Driven",
       "tags": "com"
     },
     {

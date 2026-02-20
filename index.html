@@ -687,63 +687,31 @@ function initFilters(allTags, firstTag) {
   function applyFilter(activeTag) {
     const isFullProfile = (activeTag === firstTag);
 
+    // Selectors for all individually-tagged items
+    const ITEM_SEL = '.about-text[data-tags], .exp-item[data-tags], .edu-item[data-tags], .skill-group[data-tags], .travel-card[data-tags], .imp-bucket[data-tags]';
+
     sections.forEach(sec => {
-      const secTagStr = sec.dataset.sectionTags || '';
-      const secTags   = secTagStr.split(/\s+/).filter(Boolean);
+      // Step 1 — filter every tagged item strictly by its own tags.
+      // Full Profile does NOT mean "show everything" — it means show items
+      // that include the firstTag (e.g. "pro") in their own tags array.
+      const typedItems = sec.querySelectorAll(ITEM_SEL);
 
-      // Does this section have at least one item matching the active tag?
-      const secVisible = isFullProfile
-        ? secTags.length > 0
-        : secTags.includes(activeTag);
-
-      sec.classList.toggle('sec-hidden', !secVisible);
-      if (!secVisible) return;
-
-      // Within visible sections, show/hide individual tagged items
-      // about paragraphs
-      sec.querySelectorAll('.about-text[data-tags]').forEach(el => {
-        const t = (el.dataset.tags||'').split(/\s+/).filter(Boolean);
-        el.classList.toggle('item-hidden', !isFullProfile && !t.includes(activeTag));
+      typedItems.forEach(el => {
+        const t = (el.dataset.tags || '').split(/\s+/).filter(Boolean);
+        // An item is visible only if its own tags include the active tag.
+        el.classList.toggle('item-hidden', !t.includes(activeTag));
       });
 
-      // exp/project cards
-      sec.querySelectorAll('.exp-item[data-tags]').forEach(el => {
-        const t = (el.dataset.tags||'').split(/\s+/).filter(Boolean);
-        el.classList.toggle('item-hidden', !isFullProfile && !t.includes(activeTag));
-      });
-
-      // edu items
-      sec.querySelectorAll('.edu-item[data-tags]').forEach(el => {
-        const t = (el.dataset.tags||'').split(/\s+/).filter(Boolean);
-        el.classList.toggle('item-hidden', !isFullProfile && !t.includes(activeTag));
-      });
-
-      // skill groups
-      sec.querySelectorAll('.skill-group[data-tags]').forEach(el => {
-        const t = (el.dataset.tags||'').split(/\s+/).filter(Boolean);
-        el.classList.toggle('item-hidden', !isFullProfile && !t.includes(activeTag));
-      });
-
-      // travel cards
-      sec.querySelectorAll('.travel-card[data-tags]').forEach(el => {
-        const t = (el.dataset.tags||'').split(/\s+/).filter(Boolean);
-        el.classList.toggle('item-hidden', !isFullProfile && !t.includes(activeTag));
-      });
-
-      // impossible list buckets
-      sec.querySelectorAll('.imp-bucket[data-tags]').forEach(el => {
-        const t = (el.dataset.tags||'').split(/\s+/).filter(Boolean);
-        el.classList.toggle('item-hidden', !isFullProfile && !t.includes(activeTag));
-      });
-
-      // After filtering, hide section if ALL its typed items are now hidden
-      // (section may have items but none matching)
-      const typedItems = sec.querySelectorAll(
-        '.about-text[data-tags], .exp-item[data-tags], .edu-item[data-tags], .skill-group[data-tags], .travel-card[data-tags], .imp-bucket[data-tags]'
-      );
+      // Step 2 — hide the whole section if it has typed items but none are visible,
+      // or if it has no typed items and it isn't a "static" section (languages, certs, hobbies).
       if (typedItems.length > 0) {
         const anyVisible = [...typedItems].some(el => !el.classList.contains('item-hidden'));
         sec.classList.toggle('sec-hidden', !anyVisible);
+      } else {
+        // Sections with no individually-tagged items (languages, certs, hobbies)
+        // use data-section-tags to decide visibility.
+        const secTags = (sec.dataset.sectionTags || '').split(/\s+/).filter(Boolean);
+        sec.classList.toggle('sec-hidden', !secTags.includes(activeTag));
       }
     });
   }
