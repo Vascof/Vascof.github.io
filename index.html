@@ -314,15 +314,144 @@
     to   { opacity: 1; transform: translateY(0); }
   }
 
-  /* ── PRINT ── */
+  /* print layout wrappers — invisible on screen */
+  #print-body, #print-main, #print-side { display: contents; }
+  /* header wrappers — transparent on screen, right column hidden (about shown below instead) */
+  #print-header-left  { display: contents; }
+  #print-header-right { display: none; }
+
+  /* ── PRINT — compact two-column CV layout ── */
   @media print {
-    .toolbar, body::after { display: none !important; }
-    :root { --bg:#fff; --surface:#fff; --border:#ddd; --body:#444; --heading:#111; --accent:#8b6914; --teal:#2d7a68; --muted:#888; --subtle:#666; }
-    body { background: #fff; }
+    /* Reset colours to white/black */
+    :root {
+      --bg: #fff; --surface: #f7f7f7; --border: #d8d8d8;
+      --body: #2a2a2a; --heading: #0a0a0a; --accent: #7a5c1e;
+      --teal: #2d7a68; --muted: #666; --subtle: #555;
+    }
+
+    /* Hide screen-only chrome and filtered-out items */
+    .toolbar, body::after, .skill-tags, .exp-link,
+    #sec-about, #sec-hobbies, #sec-international, #sec-impossible,
     .item-hidden, .sec-hidden { display: none !important; }
-    header { padding: 2rem 0 1.5rem; }
-    h1 { font-size: 3rem; }
-    section { margin-top: 2rem; }
+
+    body { background: #fff; font-size: 8.5pt; line-height: 1.45; }
+    .page { max-width: 100%; padding: 0; margin: 0; }
+
+    /* ── Header: two columns — name/contact left, about right ── */
+    header {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: .6cm;
+      align-items: center;
+      padding: .4cm 0 .35cm;
+      border-bottom: 1.5pt solid var(--accent);
+      margin-bottom: 0;
+    }
+    header::after { display: none; }
+    #print-header-left  { display: block !important; }
+    #print-header-right {
+      display: block !important;
+      border-left: 1pt solid var(--border);
+      padding-left: .5cm;
+    }
+    /* About text in print header — compact, no border decoration */
+    #print-header-right .about-text {
+      font-size: 7pt; line-height: 1.5;
+      border-left: none; padding-left: 0;
+      margin-bottom: .3rem;
+      color: var(--body);
+    }
+    /* Only show the pro/tech/com about paragraph, not the goal one */
+    #print-header-right .about-text[data-tags*="goal"] { display: none !important; }
+    .header-eyebrow { display: none; }
+    h1 { font-size: 20pt; line-height: 1; margin-bottom: .12cm; letter-spacing: -.01em; }
+    .tagline { font-size: 7pt; margin-bottom: .2cm; letter-spacing: .02em; }
+    .contact-row { font-size: 6.5pt; gap: .7rem; flex-wrap: wrap; }
+
+    /* ── Two-column body ── */
+    #print-body { display: grid !important; grid-template-columns: 1fr 6.4cm; gap: .55cm; align-items: start; margin-top: .4cm; }
+    #print-main  { display: block !important; }
+    #print-side  { display: block !important; border-left: 1pt solid var(--border); padding-left: .45cm; }
+
+    /* Section labels */
+    section { margin-top: .35cm; }
+    .section-label {
+      font-size: 5.5pt; letter-spacing: .22em;
+      margin-bottom: .25cm; color: var(--accent);
+    }
+    .section-label::after { background: var(--border); }
+
+    /* Experience / internship items */
+    .exp-item {
+      grid-template-columns: 2.1cm 1fr;
+      gap: .3cm;
+      padding: .28cm 0;
+      animation: none;
+    }
+    .exp-period { font-size: 6.5pt; }
+    .exp-location { font-size: 6pt; }
+    .exp-role { font-size: 9pt; margin-bottom: .05cm; }
+    .exp-org  { font-size: 7pt; }
+    .exp-org-row { margin-bottom: .18cm; }
+    .exp-desc { font-size: 7.5pt; line-height: 1.4; }
+    .exp-desc ul { padding-left: .7rem; }
+    .exp-desc li { margin-bottom: .08cm; }
+
+    /* Education items */
+    .edu-item {
+      grid-template-columns: 2.1cm 1fr;
+      gap: .3cm;
+      padding: .25cm 0;
+    }
+    .edu-period { font-size: 6.5pt; }
+    .edu-degree { font-size: 8.5pt; margin-bottom: .06cm; }
+    .edu-school { font-size: 7pt; margin-bottom: .1cm; }
+    .edu-note   { font-size: 6.5pt; line-height: 1.35; }
+
+    /* Skills — single column in sidebar */
+    .skills-outer { grid-template-columns: 1fr; gap: .3cm; }
+    .skill-group h3 { font-size: 5.5pt; margin-bottom: .15cm; }
+    .pill {
+      font-size: 6pt; padding: .05cm .2cm;
+      border-color: var(--border); color: var(--subtle);
+    }
+    .pill-row { gap: .15rem; }
+
+    /* Languages — tighter */
+    .lang-row {
+      grid-template-columns: 1.6cm 1fr 1.8cm;
+      gap: .25cm; padding: .18cm 0;
+    }
+    .lang-name  { font-size: 7pt; }
+    .lang-level { font-size: 6pt; }
+    .lang-fill  { background: var(--accent); }
+
+    /* Certs */
+    .cert-row { flex-direction: column; gap: .2cm; }
+    .cert-card {
+      padding: .2cm .35cm;
+      background: var(--surface);
+      border-color: var(--border);
+    }
+    .cert-issuer { font-size: 5.5pt; }
+    .cert-name   { font-size: 7pt; }
+
+    /* Projects in sidebar */
+    .exp-item.project-item {
+      grid-template-columns: 1fr;
+      gap: .1cm;
+    }
+    .exp-item.project-item .exp-meta { display: none; }
+
+    /* Page break control — nothing splits across pages */
+    section                { page-break-inside: avoid; break-inside: avoid; }
+    #print-side            { page-break-inside: avoid; break-inside: avoid; }
+    .exp-item              { page-break-inside: avoid; break-inside: avoid; }
+    .edu-item              { page-break-inside: avoid; break-inside: avoid; }
+    .skill-group           { page-break-inside: avoid; break-inside: avoid; }
+    .cert-card             { page-break-inside: avoid; break-inside: avoid; }
+    .lang-row              { page-break-inside: avoid; break-inside: avoid; }
+    footer { display: none; }
   }
 
   /* ── RESPONSIVE ── */
@@ -588,73 +717,91 @@ function render(d) {
   document.getElementById('root').innerHTML = `
 
     <header>
-      <p class="header-eyebrow">Portfolio · ${d.meta.location}</p>
-      <h1>${d.meta.name.split(' ').join('<br>')}</h1>
-      <p class="tagline">${d.meta.title}</p>
-      <div class="contact-row">${contact}</div>
+      <div id="print-header-left">
+        <p class="header-eyebrow">Portfolio · ${d.meta.location}</p>
+        <h1>${d.meta.name.split(' ').join('<br>')}</h1>
+        <p class="tagline">${d.meta.title}</p>
+        <div class="contact-row">${contact}</div>
+      </div>
+      <div id="print-header-right">
+        ${renderAbout(d.about, allTags)}
+      </div>
     </header>
 
-    <!-- ABOUT -->
+    <!-- ABOUT (screen only — hidden on print, shown inline in header) -->
     <section id="sec-about" data-section-tags="${d.about.map(a=>normTags(a.tags).join(' ')).join(' ')}">
       <p class="section-label">About</p>
       ${renderAbout(d.about, allTags)}
     </section>
 
-    <!-- EXPERIENCE -->
-    <section id="sec-exp" data-section-tags="${d.experience.map(e=>normTags(e.tags).join(' ')).join(' ')}">
-      <p class="section-label">Experience</p>
-      ${renderExpItems(d.experience, allTags)}
-    </section>
+    <!-- TWO-COLUMN PRINT WRAPPER — on screen these divs are invisible containers -->
+    <div id="print-body">
 
-    <!-- INTERNSHIPS / SHORT GIGS -->
-    ${internItems.length ? `
-    <section id="sec-intern" data-section-tags="${internItems.map(e=>normTags(e.tags).join(' ')).join(' ')}">
-      <p class="section-label">${internLabel}</p>
-      ${renderExpItems(internItems, allTags)}
-    </section>` : ''}
+      <div id="print-main">
 
-    <!-- EDUCATION -->
-    <section id="sec-edu" data-section-tags="${d.education.map(e=>normTags(e.tags||['pro','tech']).join(' ')).join(' ')}">
-      <p class="section-label">Education</p>
-      ${renderEducation(d.education, allTags)}
-    </section>
+        <!-- EXPERIENCE -->
+        <section id="sec-exp" data-section-tags="${d.experience.map(e=>normTags(e.tags).join(' ')).join(' ')}">
+          <p class="section-label">Experience</p>
+          ${renderExpItems(d.experience, allTags)}
+        </section>
 
-    <!-- SKILLS -->
-    <section id="sec-skills" data-section-tags="${d.skills.map(g=>normTags(g.tags||['pro']).join(' ')).join(' ')}">
-      <p class="section-label">Skills &amp; Tools</p>
-      ${renderSkills(d.skills, allTags)}
-    </section>
+        <!-- INTERNSHIPS / SHORT GIGS -->
+        ${internItems.length ? `
+        <section id="sec-intern" data-section-tags="${internItems.map(e=>normTags(e.tags).join(' ')).join(' ')}">
+          <p class="section-label">${internLabel}</p>
+          ${renderExpItems(internItems, allTags)}
+        </section>` : ''}
 
-    <!-- LANGUAGES -->
-    <section id="sec-langs" data-section-tags="${allTags.map(t=>t.tags).join(' ')}">
-      <p class="section-label">Languages</p>
-      ${renderLanguages(d.languages)}
-    </section>
+        <!-- EDUCATION -->
+        <section id="sec-edu" data-section-tags="${d.education.map(e=>normTags(e.tags||['pro','tech']).join(' ')).join(' ')}">
+          <p class="section-label">Education</p>
+          ${renderEducation(d.education, allTags)}
+        </section>
 
-    <!-- CERTIFICATIONS -->
-    <section id="sec-certs" data-section-tags="pro tech">
-      <p class="section-label">Certifications</p>
-      ${renderCerts(d.certifications)}
-    </section>
+      </div><!-- /print-main -->
 
-    <!-- HOBBIES -->
+      <div id="print-side">
+
+        <!-- SKILLS -->
+        <section id="sec-skills" data-section-tags="${d.skills.map(g=>normTags(g.tags||['pro']).join(' ')).join(' ')}">
+          <p class="section-label">Skills &amp; Tools</p>
+          ${renderSkills(d.skills, allTags)}
+        </section>
+
+        <!-- LANGUAGES -->
+        <section id="sec-langs" data-section-tags="${allTags.map(t=>t.tags).join(' ')}">
+          <p class="section-label">Languages</p>
+          ${renderLanguages(d.languages)}
+        </section>
+
+        <!-- CERTIFICATIONS -->
+        <section id="sec-certs" data-section-tags="pro tech">
+          <p class="section-label">Certifications</p>
+          ${renderCerts(d.certifications)}
+        </section>
+
+        <!-- PROJECTS -->
+        ${d.projects && d.projects.length ? `
+        <section id="sec-projects" data-section-tags="${d.projects.map(p=>normTags(p.tags).join(' ')).join(' ')}">
+          <p class="section-label">Projects</p>
+          ${renderExpItems(d.projects, allTags, true)}
+        </section>` : ''}
+
+      </div><!-- /print-side -->
+
+    </div><!-- /print-body -->
+
+    <!-- HOBBIES (screen only) -->
     <section id="sec-hobbies" data-section-tags="pro goal">
       <p class="section-label">Hobbies</p>
       ${renderHobbies(d.hobbies)}
     </section>
 
-    <!-- INTERNATIONAL EXPERIENCES -->
+    <!-- INTERNATIONAL EXPERIENCES (screen only) -->
     ${hasIntlTags ? `
     <section id="sec-international" data-section-tags="${intlItems.map(t=>normTags(t.tags).join(' ')).join(' ')}">
       <p class="section-label">International Experiences</p>
       ${renderTravel(intlItems)}
-    </section>` : ''}
-
-    <!-- PROJECTS -->
-    ${d.projects && d.projects.length ? `
-    <section id="sec-projects" data-section-tags="${d.projects.map(p=>normTags(p.tags).join(' ')).join(' ')}">
-      <p class="section-label">Projects</p>
-      ${renderExpItems(d.projects, allTags)}
     </section>` : ''}
 
     <!-- IMPOSSIBLE LIST -->
