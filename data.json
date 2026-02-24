@@ -91,6 +91,18 @@
       "skills": ["Marketing", "Content Creation", "Social Media"]
     },
     {
+      "role": "Cultural Department Coordinator",
+      "org": "Erasmus Student Network (ESN) Coimbra",
+      "period": "Aug 2019 – Jul 2020",
+      "location": "Coimbra, Portugal",
+      "tags": ["pro", "com"],
+      "bullets": [
+        "Organised all logistics for trips and events across Portugal for international students — accommodations, transport, activities.",
+        "Provided training and onboarding for new members."
+      ],
+      "skills": ["Event Coordination", "Logistics", "Mentoring", "International Relations"]
+    },
+    {
       "role": "Web Developer",
       "org": "SPEAK",
       "period": "Aug 2015",
@@ -102,18 +114,6 @@
         "UI improvements in HTML and CSS; collaborated with multidisciplinary teams on project planning."
       ],
       "skills": ["OutSystems", "HTML/CSS"]
-    },
-    {
-      "role": "Cultural Department Coordinator",
-      "org": "Erasmus Student Network (ESN) Coimbra",
-      "period": "Aug 2019 – Jul 2020",
-      "location": "Coimbra, Portugal",
-      "tags": ["pro", "com"],
-      "bullets": [
-        "Organised all logistics for trips and events across Portugal for international students — accommodations, transport, activities.",
-        "Provided training and onboarding for new members."
-      ],
-      "skills": ["Event Coordination", "Logistics", "Mentoring", "International Relations"]
     },
     {
       "role": "Vice-President",
