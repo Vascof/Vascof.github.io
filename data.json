@@ -23,6 +23,18 @@
 
   "experience": [
     {
+      "role": "Guardian team lead",
+      "org": "Ten lives festival",
+      "period": "Apr 2026 – May 2026",
+      "location": "Portugal",
+      "tags": ["pro", "com"],
+      "bullets": [
+        "Organized a a regerative festival with a belgium collective",
+        "Responsible for guiding teams of particiapants into the regeneration work "
+      ],
+      "skills": ["Python", "Robot Framework", "CI/CD", "Jenkins", "API Testing", "SAFe/Scrum"]
+    },
+    {
       "role": "Quality Assurance Engineer",
       "org": "Amadeus",
       "period": "Jun 2023 – Oct 2025",
