@@ -861,6 +861,13 @@ function initFilters(allTags, firstTag) {
         sec.classList.toggle('sec-hidden', !secTags.includes(activeTag));
       }
     });
+
+    // #print-header-right is inside <header>, not a <section>, so the loop above never touches it.
+    // Apply the same tag filter to its about copies so print respects the active tab.
+    document.querySelectorAll('#print-header-right .about-text[data-tags]').forEach(el => {
+      const t = (el.dataset.tags || '').split(/\s+/).filter(Boolean);
+      el.classList.toggle('item-hidden', !t.includes(activeTag));
+    });
   }
 
   btns.forEach(btn => {

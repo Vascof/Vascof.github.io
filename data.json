@@ -1,19 +1,23 @@
 {
   "meta": {
     "name": "Vasco Ferreira",
-    "title": "Software QA Engineer · Community Builder · Human",
-    "location": "",
+    "title": "QA Engineer · Community Builder · Human",
+    "location": "Europe",
     "email": "vasco.ferreira94@gmail.com",
     "linkedin": "https://www.linkedin.com/in/vascopferreira/",
     "github": "",
     "website": "",
-    "lastUpdated": "February 2026"
+    "lastUpdated": "June 2026"
   },
 
   "about": [
     {
-      "text": "Electrical engineer turned QA engineer with a genuine passion for data, systems, and the craft of building reliable software. I care about quality at every level — in code, in people, and in experience. Outside of the terminal I search for interesting people and experiences.",
-      "tags": ["pro", "tech", "com"]
+      "text": "An engineer with a genuine passion for data, systems, and the craft of building and testing reliable software. I make sure your product has the highest standards of quality in the market. Outside of the terminal I search for interesting people and experiences.",
+      "tags": ["pro", "tech"]
+    },
+    {
+      "text": "A curious human with experience facilitating group experiences and help designning ecosystems that nurture soils, souls and society.",
+      "tags": ["com"]
     },
     {
       "text": "There are a lot of things I would love to do. Some I have already done and would like to keep improving — this is how I keep track.",
@@ -23,16 +27,29 @@
 
   "experience": [
     {
+      "role": "Volunteer in itentional Eco-Village communities",
+      "org": "Traditional Dream Factory, PUSH, Awakeland",
+      "period": "Mar 2026 – Jul 2026",
+      "location": "Portugal, Italy",
+      "tags": ["pro", "com"],
+      "bullets": [
+        "I spent spring and summer of 2026 volunteering in eco villages in Portugal.",
+        "I learned about permaculture design, decentralized governance, community"
+      ],
+      "skills": ["Permaculture", "Eco Villages", "Sustainability", "Governance"]
+    },
+    {
       "role": "Guardian team lead",
       "org": "Ten lives festival",
       "period": "Apr 2026 – May 2026",
       "location": "Portugal",
       "tags": ["pro", "com"],
       "bullets": [
-        "Organized a a regerative festival with a belgium collective",
-        "Responsible for guiding teams of particiapants into the regeneration work "
+        "Ten Lives is the first regenrative festival in europe",
+        "Participants work in the land in the morning, have conferences in the afternoon and party at night",
+        "My responsibility was to guide teams of particiapants into the regeneration work and leading teams into the work"
       ],
-      "skills": ["Leadership", "Event manager", "Language"]
+      "skills": ["Leadership", "Event managment", "Regenration"]
     },
     {
       "role": "Quality Assurance Engineer",
@@ -62,6 +79,30 @@
         "Agile environment; collaborated across developers, project managers, and clients to report testing progress and risks."
       ],
       "skills": ["C++", "Embedded Systems", "Automotive ECU", "HiL", "AUTOSAR"]
+    },
+    {
+      "role": "Cultural Department Coordinator",
+      "org": "Erasmus Student Network (ESN) Coimbra",
+      "period": "Aug 2019 – Jul 2020",
+      "location": "Coimbra, Portugal",
+      "tags": ["pro", "com"],
+      "bullets": [
+        "Organised all logistics for trips and events across Portugal for international students — accommodations, transport, activities.",
+        "Provided training and onboarding for new members."
+      ],
+      "skills": ["Event Coordination", "Logistics", "Mentoring", "International Relations"]
+    },
+    {
+      "role": "Vice-President",
+      "org": "Board of European Students of Technology (BEST)",
+      "period": "Jul 2014 – Sept 2015",
+      "location": "Coimbra, Portugal",
+      "tags": ["pro", "com"],
+      "bullets": [
+        "Strategic communication between BEST and its stakeholders: university, companies, students, and media.",
+        "Social media content creation, event planning, financial oversight, and organisational governance."
+      ],
+      "skills": ["Leadership", "Strategy", "Communications", "Governance"]
     }
   ],
 
@@ -79,19 +120,6 @@
       "skills": ["Python", "Agile", "ISTQB", "Browser Automation"]
     },
     {
-      "role": "Research Assistant – Data Analyst",
-      "org": "Institute of Systems and Robotics, Univ. Coimbra",
-      "period": "Jun 2019 – Aug 2020",
-      "location": "Coimbra, Portugal",
-      "tags": ["pro", "tech"],
-      "bullets": [
-        "Applied computer vision and machine learning to recognise and authenticate images using advanced image descriptors.",
-        "Technology creates unique stochastic markings to authenticate high-end products — currently deployed in tobacco package stamps.",
-        "Extracted forensic features (particles, faces, fingerprints) for use in identity documents. Collaboration with Portugal's National Mint (INCM)."
-      ],
-      "skills": ["Python", "Computer Vision", "Machine Learning", "OpenCV"]
-    },
-    {
       "role": "Marketing coordinator",
       "org": "Diva Beauty Center",
       "period": "May 2016 – Nov 2016",
@@ -101,18 +129,6 @@
         "Created and managed marketing campaigns, social media content, and website copywriting."
       ],
       "skills": ["Marketing", "Content Creation", "Social Media"]
-    },
-    {
-      "role": "Cultural Department Coordinator",
-      "org": "Erasmus Student Network (ESN) Coimbra",
-      "period": "Aug 2019 – Jul 2020",
-      "location": "Coimbra, Portugal",
-      "tags": ["pro", "com"],
-      "bullets": [
-        "Organised all logistics for trips and events across Portugal for international students — accommodations, transport, activities.",
-        "Provided training and onboarding for new members."
-      ],
-      "skills": ["Event Coordination", "Logistics", "Mentoring", "International Relations"]
     },
     {
       "role": "Web Developer",
@@ -126,24 +142,12 @@
         "UI improvements in HTML and CSS; collaborated with multidisciplinary teams on project planning."
       ],
       "skills": ["OutSystems", "HTML/CSS"]
-    },
-    {
-      "role": "Vice-President",
-      "org": "Board of European Students of Technology (BEST)",
-      "period": "Jul 2014 – Sept 2015",
-      "location": "Coimbra, Portugal",
-      "tags": ["pro", "com"],
-      "bullets": [
-        "Strategic communication between BEST and its stakeholders: university, companies, students, and media.",
-        "Social media content creation, event planning, financial oversight, and organisational governance."
-      ],
-      "skills": ["Leadership", "Strategy", "Communications", "Governance"]
     }
   ],
 
   "education": [
     {
-      "degree": "Master's — Electrical & Computer Engineering (academic)",
+      "degree": "Master's — Electrical & Computer Engineering (only academic)",
       "school": "University of Coimbra",
       "period": "2018 – 2021",
       "note": "Computer Architecture, Computer Vision, Digital Fabrication, MEMS, High Performance Computing, Real-Time Systems, Systems Engineering.",
@@ -157,14 +161,14 @@
       "tags": ["pro", "tech"]
     },
     {
-      "degree": "Secondary School — Sciences & Technologies",
+      "degree": "HighSchool — Sciences & Technologies",
       "school": "Centro de Estudos de Fátima",
       "period": "2009 – 2012",
       "note": "Secondary Education Diploma – Science and Technology",
       "tags": ["pro", "tech"]
     },
     {
-      "degree": "Non-formal Education",
+      "degree": "Scouts Movement",
       "school": "Corpo Nacional de Escutas — National Body of the Scout Movement",
       "period": "2001 – 2014",
       "note": "Non-formal education in the Scout Movement rooted in nature, service to local communities, leadership development, outdoor survival, constructive dialogue, and values-driven action.",
@@ -195,7 +199,7 @@
     },
     {
       "group": "Soft Skills",
-      "items": ["Leadership", "Facilitator", "Events Manager", "Rituals"],
+      "items": ["Team Lead", "Facilitator", "Events Manager", "Conflic Resolution" , "Conflic Resolution", "Governance"],
       "tags": ["pro", "com"]
     }
   ],
@@ -268,31 +272,43 @@
   "international": [
     {
       "region": "South America",
-      "title": "1-Year Solo Trip",
+      "title": "Volunteering and Traveling in Latin America",
       "tags": ["pro", "com"],
-      "note": "Travelled solo across South America for a full year with a backpack. Immersed in local cultures, languages, and landscapes."
+      "note": "Travelled solo across South America for a full year with a backpack. Immersed in local cultures, languages, and landscapes. Volunteered in hostels, selling crepes to pay my rent in Colombia, going on a ayahausca retreat and hiking the tallest mountain on earth were some of my adventures. Learned to be more humble apretiate family and friends more and discovered myself."
     },
     {
       "region": "Asia",
-      "title": "4 Months Backpacking",
+      "title": "Backpacking in southeast asia to learn new skills",
       "tags": ["pro", "com"],
-      "note": "Another backpacking trip: snowboarding in Japan, diving in the Philippines, surfing in Sri Lanka, partying in Thailand, and eating my way through India."
+      "note": "This trip was all about learning new skills and imerse into new realities. Snowboarding in Japan, diving in the Philippines, surfing in Sri Lanka, discovering monks in Thailand and meeting the harsh reality of India with its delicious food."
     },
     {
-      "region": "Europe",
-      "title": "3 week summer courses",
+      "region": "Ljubljana, Slovenia and Skopje, Macedonia",
+      "title": "Summer courses from the Board of European Students of Technology",
       "tags": ["pro", "com"],
       "note": "Studying a technology topic with a group of 30 strangers in a European city. Self-driving cars in Ljubljana and Entrepreneurship in Skopje."
     },
     {
       "region": "France",
-      "title": "Working abroad for 3 years",
+      "title": "Working and Living in a country I don't speak the language for 3 years",
       "tags": ["pro", "tech",  "com"],
-      "note": "Living and working abroad in a SaaS multinational company in the travel industry. "
+      "note": "Living and working abroad in a SaaS multinational company in the travel industry. I learned a new language and the diffulties of moving to a country you don't know the language and know very few people."
     }
   ],
 
   "projects": [
+    {
+      "role": "Co-founder and Tour guide",
+      "org": "Maresia - minimalist travel agency",
+      "period": "2026",
+      "location": "Portugal",
+      "tags": ["pro", "com"],
+      "bullets": [
+        "Maresia is minimalist travel agency focused on community.",
+        "Our first event is a 6 day road trip on the southwest coast of Portugal, taking a group of people in a 9 seater van and caping at different spots"
+      ],
+      "skills": ["Enterpreneurship", "Marketing", "Event managment"]
+    },
     {
       "name": "Robot Telemetry Data App",
       "org": "Side Project",
@@ -548,7 +564,7 @@
       "tags": "pro"
     },
     {
-      "name": "QA and Technology",
+      "name": "Technology",
       "tags": "tech"
     },
     {
