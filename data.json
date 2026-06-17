@@ -27,6 +27,20 @@
 
   "experience": [
     {
+      "role": "AI QA Engineer",
+      "org": "Part-time Freelance",
+      "period": "Mar 2026 – Present",
+      "location": "Remote",
+      "tags": ["pro", "tech"],
+      "bullets": [
+        "Worked for AI Training Data industry as contractor",
+        "Multi-Modal Quality Assurance: Evaluated AI-generated text, images, and structured data to identify factual errors, hallucinations, and inconsistencies across diverse content categories.",
+        "Technical Testing & Code Review: Debugged AI-generated code and diagnosed logic errors and edge cases.",
+        "Model Optimization & Reporting: Technical documentation for AI model refinement."
+      ],
+      "skills": ["Python", "Reinforcement Learning from Human Feedback", "Multi-Modal Analysis"]
+    },
+    {
       "role": "Volunteer in itentional Eco-Village communities",
       "org": "Traditional Dream Factory, PUSH, Awakeland",
       "period": "Mar 2026 – Jul 2026",
@@ -115,7 +129,8 @@
       "tags": ["pro", "tech"],
       "bullets": [
         "Browser automation with no-code tools and Python, applying ISTQB techniques to ensure optimal web app functionality.",
-        "QA strategy design, Agile methodologies, and efficient bug tracking."
+        "QA strategy design, Agile methodologies, and efficient bug tracking.",
+        "USed Selenium, Cypress and Playwright for web"
       ],
       "skills": ["Python", "Agile", "ISTQB", "Browser Automation"]
     },
