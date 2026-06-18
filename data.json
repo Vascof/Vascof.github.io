@@ -95,6 +95,19 @@
       "skills": ["C++", "Embedded Systems", "Automotive ECU", "HiL", "AUTOSAR"]
     },
     {
+      "role": "Research Assistant – Data Analyst",
+      "org": "Institute of Systems and Robotics, Univ. Coimbra",
+      "period": "Jun 2019 – Aug 2020",
+      "location": "Coimbra, Portugal",
+      "tags": ["pro", "tech"],
+      "bullets": [
+        "Applied computer vision and machine learning to recognise and authenticate images using advanced image descriptors.",
+        "Technology creates unique stochastic markings to authenticate high-end products — currently deployed in tobacco package stamps.",
+        "Extracted forensic features (particles, faces, fingerprints) for use in identity documents. Collaboration with Portugal's National Mint (INCM)."
+      ],
+      "skills": ["Python", "Computer Vision", "Machine Learning", "OpenCV"]
+    },
+    {
       "role": "Cultural Department Coordinator",
       "org": "Erasmus Student Network (ESN) Coimbra",
       "period": "Aug 2019 – Jul 2020",
@@ -162,7 +175,7 @@
 
   "education": [
     {
-      "degree": "Master's — Electrical & Computer Engineering (only academic)",
+      "degree": "Master's — Electrical & Computer Engineering (academic)",
       "school": "University of Coimbra",
       "period": "2018 – 2021",
       "note": "Computer Architecture, Computer Vision, Digital Fabrication, MEMS, High Performance Computing, Real-Time Systems, Systems Engineering.",
