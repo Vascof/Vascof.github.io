@@ -75,7 +75,7 @@
         "Ensured end-to-end quality of the NDCX NDC API platform by defining and executing test plans within a SAFe/Scrum team.",
         "Performed exploratory, functional, and end-to-end testing of airline, GDS and payment integrations via APIs and UI flows.",
         "Designed automated regression tests in Python (internal framework + Robot Framework); reviewed C++ changes to assess testing impact.",
-        "Led design and implementation of the CI/CD testing pipeline (Jenkins, BIRD), integrating automated suites into deployments.",
+        "Used Postman to test APIs and kafta when Event-Driven. In adition, used grafana  for dashboards and alerting",
         "Managed user stories, test cases, and defects in Jira and Octane; mentored juniors and contributed to team-wide testing standards."
       ],
       "skills": ["Python", "Robot Framework", "CI/CD", "Jenkins", "API Testing", "SAFe/Scrum"]
