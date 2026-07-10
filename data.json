@@ -16,7 +16,7 @@
       "tags": ["pro", "tech"]
     },
     {
-      "text": "A curious human with experience facilitating group experiences and help designning ecosystems that nurture soils, souls and society.",
+      "text": "A curious human fascinated by itentional travel, community and designing ecosystems that nurture soils, souls and society.",
       "tags": ["com"]
     },
     {
@@ -47,8 +47,9 @@
       "location": "Portugal, Italy",
       "tags": ["pro", "com"],
       "bullets": [
-        "I spent spring and summer of 2026 volunteering in eco villages in Portugal.",
-        "I learned about permaculture design, decentralized governance, community"
+        "I spent spring and summer of 2026 volunteering in eco villages in Portugal and Italy.",
+        "Hands-on learning and practice in permaculture design, decentralized governance, community, compost managment, construction and water retention",
+        "Different ways to manage and finance a community "
       ],
       "skills": ["Permaculture", "Eco Villages", "Sustainability", "Governance"]
     },
@@ -63,7 +64,7 @@
         "Participants work in the land in the morning, have conferences in the afternoon and party at night",
         "My responsibility was to guide teams of particiapants into the regeneration work and leading teams into the work"
       ],
-      "skills": ["Leadership", "Event managment", "Regenration"]
+      "skills": ["Leadership", "Event managment", "Regeneration"]
     },
     {
       "role": "Quality Assurance Engineer",
@@ -75,10 +76,10 @@
         "Ensured end-to-end quality of the NDCX NDC API platform by defining and executing test plans within a SAFe/Scrum team.",
         "Performed exploratory, functional, and end-to-end testing of airline, GDS and payment integrations via APIs and UI flows.",
         "Designed automated regression tests in Python (internal framework + Robot Framework); reviewed C++ changes to assess testing impact.",
-        "Used Postman to test APIs and kafta when Event-Driven. In adition, used grafana  for dashboards and alerting",
-        "Managed user stories, test cases, and defects in Jira and Octane; mentored juniors and contributed to team-wide testing standards."
+        "Used Postman to test APIs and kafta when Event-Driven. In adition, used  and designed grafana dashboards for reporting and alerting",
+        "Managed user stories, test cases, and defects in Jira and Octane; mentored juniors"
       ],
-      "skills": ["Python", "Robot Framework", "CI/CD", "Jenkins", "API Testing", "SAFe/Scrum"]
+      "skills": ["Python", "Robot Framework", "CI/CD", "Jenkins", "API Testing", "JavaScript", "SOAPUI", "kafka", "Postman", "Grafana"]
     },
     {
       "role": "Software Developer Engineer in Test",
@@ -92,7 +93,7 @@
         "Stack size management for automotive embedded systems — integration of Gliwa T1 for runtime measurements.",
         "Agile environment; collaborated across developers, project managers, and clients to report testing progress and risks."
       ],
-      "skills": ["C++", "Embedded Systems", "Automotive ECU", "HiL", "AUTOSAR"]
+      "skills": ["C++", "Embedded Systems", "Automotive ECU", "HiL", "AUTOSAR", "Gliwa"]
     },
     {
       "role": "Research Assistant – Data Analyst",
@@ -194,6 +195,13 @@
       "period": "2009 – 2012",
       "note": "Secondary Education Diploma – Science and Technology",
       "tags": ["pro", "tech"]
+    },
+    {
+      "degree": "Erasmus+ Training",
+      "school": "Les Pas Sage",
+      "period": "August 2026",
+      "note": "Design cooperative housing projects with generational affordability and equity, Democratic participation and collective governance in communities, Legal, stable and non-speculative financial models, Community resilience and relation with ecology",
+      "tags": ["com"]
     },
     {
       "degree": "Scouts Movement",
@@ -326,6 +334,19 @@
 
   "projects": [
     {
+      "role": "Part-time Land Manager",
+      "org": "Family land",
+      "period": "ALl my life",
+      "location": "Portugal",
+      "tags": ["com"],
+      "bullets": [
+        "Together with other family members we manage a buit less than 1 hectar of land with vegetable garden, fruit trees, and some birds (chickes, ducks, gooses)",
+        "The work includes prunning, fuit picking (apples, pears, strawberries, blackberries, cherries, etc), planting  coolecting vegetables, compost managment, watering retention techniques.",
+        "Often worked with heavy machinery such as tractors, brushcutter, "
+      ],
+      "skills": ["Land managment", "Gardening"]
+    },
+    {
       "role": "Co-founder and Tour guide",
       "org": "Maresia - minimalist travel agency",
       "period": "2026",
@@ -336,6 +357,15 @@
         "Our first event is a 6 day road trip on the southwest coast of Portugal, taking a group of people in a 9 seater van and caping at different spots"
       ],
       "skills": ["Enterpreneurship", "Marketing", "Event managment"]
+    },
+    {
+      "name": "Wood workshop - isolation panels",
+      "org": "std.io",
+      "period": "2017",
+      "location": "Ourém, Portugal",
+      "tags": ["com"],
+      "description": "Together with my brother we started a small side hustle of seeling isolation panels for music studios",
+      "skills": ["Wood working", "Sales"]
     },
     {
       "name": "Robot Telemetry Data App",
@@ -534,7 +564,7 @@
           "link": ""
         },
         {
-          "title": "Introduction to Chinese language and culture",
+          "title": "Understand basic Russian ",
           "done": false,
           "note": "The dream is to one day speak all the official languages of the UN.",
           "link": ""
@@ -579,7 +609,13 @@
         {
           "title": "Facilitate business development around community building",
           "done": true,
-          "note": "Encontrar o meu ikigai",
+          "note": "",
+          "link": ""
+        },
+        {
+          "title": "Join an intentional community a for a long term (>2 months)",
+          "done": false,
+          "note": "",
           "link": ""
         }
       ]
