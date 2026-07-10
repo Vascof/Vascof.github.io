@@ -337,20 +337,21 @@
     body { background: #fff; font-size: 8.5pt; line-height: 1.45; }
     .page { max-width: 100%; padding: 0; margin: 0; }
 
-    /* ── Header: two columns — name/contact left, about right ── */
+    /* ── Header: two columns — table layout ── */
     header {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: .6cm;
-      align-items: center;
+      display: table;
+      width: 100%;
+      table-layout: fixed;
       padding: .4cm 0 .35cm;
       border-bottom: 1.5pt solid var(--accent);
       margin-bottom: 0;
     }
     header::after { display: none; }
-    #print-header-left  { display: block !important; }
+    #print-header-left  { display: table-cell !important; vertical-align: middle; padding-right: .3cm; }
     #print-header-right {
-      display: block !important;
+      display: table-cell !important;
+      width: 50%;
+      vertical-align: middle;
       border-left: 1pt solid var(--border);
       padding-left: .5cm;
     }
@@ -368,10 +369,25 @@
     .tagline { font-size: 7pt; margin-bottom: .2cm; letter-spacing: .02em; }
     .contact-row { font-size: 6.5pt; gap: .7rem; flex-wrap: wrap; }
 
-    /* ── Two-column body ── */
-    #print-body { display: grid !important; grid-template-columns: 1fr 6.4cm; gap: .55cm; align-items: start; margin-top: .4cm; }
-    #print-main  { display: block !important; }
-    #print-side  { display: block !important; border-left: 1pt solid var(--border); padding-left: .45cm; }
+    /* ── Two-column body — table layout (Grid causes phantom pages in Chrome print) ── */
+    #print-body {
+      display: table !important;
+      width: 100%;
+      table-layout: fixed;
+      margin-top: .4cm;
+    }
+    #print-main {
+      display: table-cell !important;
+      vertical-align: top;
+      padding-right: .3cm;
+    }
+    #print-side {
+      display: table-cell !important;
+      width: 9cm;
+      vertical-align: top;
+      border-left: 1pt solid var(--border);
+      padding-left: .45cm;
+    }
 
     /* Section labels */
     section { margin-top: .35cm; }
@@ -445,7 +461,6 @@
 
     /* Page break control — nothing splits across pages */
     section                { page-break-inside: avoid; break-inside: avoid; }
-    #print-side            { page-break-inside: avoid; break-inside: avoid; }
     .exp-item              { page-break-inside: avoid; break-inside: avoid; }
     .edu-item              { page-break-inside: avoid; break-inside: avoid; }
     .skill-group           { page-break-inside: avoid; break-inside: avoid; }

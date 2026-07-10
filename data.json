@@ -237,6 +237,11 @@
       "group": "Soft Skills",
       "items": ["Team Lead", "Facilitator", "Events Manager", "Conflic Resolution" , "Conflic Resolution", "Governance"],
       "tags": ["pro", "com"]
+    },
+    {
+      "group": "Practical Skills",
+      "items": ["Construction", "Gardening", "Land Managment", "Carpentry", "Hospitality"],
+      "tags": ["com"]
     }
   ],
 
