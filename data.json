@@ -1,8 +1,8 @@
 {
   "meta": {
     "name": "Vasco Ferreira",
-    "title": "QA Engineer · Community Builder · Human",
-    "location": "Europe",
+    "title": "QA Engineer · Technical Support Engineer · Business Analyst · Scrum Master",
+    "location": "Portugal",
     "email": "vasco.ferreira94@gmail.com",
     "linkedin": "https://www.linkedin.com/in/vascopferreira/",
     "github": "",
@@ -12,7 +12,7 @@
 
   "about": [
     {
-      "text": "An engineer with a genuine passion for data, systems, and the craft of building and testing reliable software. I make sure your product has the highest standards of quality in the market. Outside of the terminal I search for interesting people and experiences.",
+      "text": "An engineer with a genuine passion for data, systems, and the craft of building and testing reliable software. Outside of the terminal I try to make a world a better place.",
       "tags": ["pro", "tech"]
     },
     {
@@ -33,7 +33,7 @@
       "location": "Remote",
       "tags": ["pro", "tech"],
       "bullets": [
-        "Worked for AI Training Data industry as contractor",
+        "AI Training Data industry",
         "Multi-Modal Quality Assurance: Evaluated AI-generated text, images, and structured data to identify factual errors, hallucinations, and inconsistencies across diverse content categories.",
         "Technical Testing & Code Review: Debugged AI-generated code and diagnosed logic errors and edge cases.",
         "Model Optimization & Reporting: Technical documentation for AI model refinement."
@@ -74,6 +74,8 @@
       "tags": ["pro", "tech"],
       "bullets": [
         "Ensured end-to-end quality of the NDCX NDC API platform by defining and executing test plans within a SAFe/Scrum team.",
+        "Diagnose and resolve technical issues reported by users, change and problem management",
+        "Scrum Master in rotation",
         "Performed exploratory, functional, and end-to-end testing of airline, GDS and payment integrations via APIs and UI flows.",
         "Designed automated regression tests in Python (internal framework + Robot Framework); reviewed C++ changes to assess testing impact.",
         "Used Postman to test APIs and kafta when Event-Driven. In adition, used  and designed grafana dashboards for reporting and alerting",
