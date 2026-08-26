@@ -27,13 +27,13 @@
 
   "experience": [
     {
-      "role": "AI QA Engineer",
-      "org": "Part-time Freelance",
+      "role": "AI Quality Assurance Specialist",
+      "org": "AI data-labeling / RLHF industry",
       "period": "Mar 2026 – Present",
       "location": "Remote",
       "tags": ["pro", "tech"],
+      "description": "A global market of platforms that orchestrate human expertise to generate, annotate, and evaluate data, turning raw human judgment into the high-quality feedback that trains, aligns, and refines AI models",
       "bullets": [
-        "AI Training Data industry",
         "Multi-Modal Quality Assurance: Evaluated AI-generated text, images, and structured data to identify factual errors, hallucinations, and inconsistencies across diverse content categories.",
         "Technical Testing & Code Review: Debugged AI-generated code and diagnosed logic errors and edge cases.",
         "Model Optimization & Reporting: Technical documentation for AI model refinement."
@@ -343,7 +343,7 @@
     {
       "role": "Part-time Land Manager",
       "org": "Family land",
-      "period": "ALl my life",
+      "period": "",
       "location": "Portugal",
       "tags": ["com"],
       "bullets": [
@@ -372,6 +372,9 @@
       "location": "Ourém, Portugal",
       "tags": ["com"],
       "description": "Together with my brother we started a small side hustle of seeling isolation panels for music studios",
+      "bullets": [
+        ""
+      ],
       "skills": ["Wood working", "Sales"]
     },
     {
@@ -381,6 +384,9 @@
       "location": "Coimbra",
       "tags": ["pro", "tech"],
       "description": "Application that records telemetry data from mobile robots via TCP/IP connections.",
+      "bullets": [
+        ""
+      ],
       "skills": ["Networking", "Embedded Systems"]
     },
     {
@@ -389,6 +395,7 @@
       "period": "2013 – 2014",
       "location": "Coimbra, Portugal",
       "tags": ["pro", "com"],
+      "description": "",
       "bullets": [
         "Pan-European student engineering competition. Teams of 4 solve complex technical challenges across local, regional, and European finals."
       ],

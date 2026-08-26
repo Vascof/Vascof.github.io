@@ -165,6 +165,10 @@
   }
   .exp-link:hover { color: var(--accent); border-color: var(--accent); }
   .exp-desc { font-size: .84rem; color: var(--body); line-height: 1.8; }
+  .exp-desc-intro {
+    font-size: .84rem; color: var(--subtle);
+    line-height: 1.7; font-style: italic; margin-bottom: .45rem;
+  }
   .exp-desc ul { padding-left: 1.1rem; }
   .exp-desc li { margin-bottom: .35rem; }
   .skill-tags { display: flex; gap: .35rem; flex-wrap: wrap; margin-top: .8rem; }
@@ -320,156 +324,111 @@
   #print-header-left  { display: contents; }
   #print-header-right { display: none; }
 
-  /* ── PRINT — compact two-column CV layout ── */
+  /* ── PRINT — single-column compact CV ── */
   @media print {
-    /* Reset colours to white/black */
     :root {
-      --bg: #fff; --surface: #f7f7f7; --border: #d8d8d8;
+      --bg: #fff; --surface: #f5f5f5; --border: #d8d8d8;
       --body: #2a2a2a; --heading: #0a0a0a; --accent: #7a5c1e;
       --teal: #2d7a68; --muted: #666; --subtle: #555;
     }
 
-    /* Hide screen-only chrome and filtered-out items */
-    .toolbar, body::after, .skill-tags, .exp-link,
+    /* Hide screen chrome, filtered items, non-CV sections */
+    .toolbar, body::after, .exp-link,
     #sec-about, #sec-hobbies, #sec-international, #sec-impossible,
     .item-hidden, .sec-hidden { display: none !important; }
 
     body { background: #fff; font-size: 8.5pt; line-height: 1.45; }
     .page { max-width: 100%; padding: 0; margin: 0; }
 
-    /* ── Header: two columns — table layout ── */
+    /* ── Header: name/contact left · about right ── */
     header {
-      display: table;
-      width: 100%;
-      table-layout: fixed;
-      padding: .4cm 0 .35cm;
-      border-bottom: 1.5pt solid var(--accent);
-      margin-bottom: 0;
+      display: table; width: 100%; table-layout: fixed;
+      padding: .3cm 0 .28cm;
+      border-bottom: 1.5pt solid var(--accent); margin-bottom: 0;
     }
     header::after { display: none; }
-    #print-header-left  { display: table-cell !important; vertical-align: middle; padding-right: .3cm; }
+    #print-header-left { display: table-cell !important; vertical-align: middle; padding-right: .4cm; }
     #print-header-right {
-      display: table-cell !important;
-      width: 50%;
-      vertical-align: middle;
-      border-left: 1pt solid var(--border);
-      padding-left: .5cm;
+      display: table-cell !important; width: 48%; vertical-align: middle;
+      border-left: 1pt solid var(--border); padding-left: .45cm;
     }
-    /* About text in print header — compact, no border decoration */
     #print-header-right .about-text {
-      font-size: 7pt; line-height: 1.5;
-      border-left: none; padding-left: 0;
-      margin-bottom: .3rem;
-      color: var(--body);
+      font-size: 7pt; line-height: 1.5; border-left: none;
+      padding-left: 0; margin-bottom: .2rem; color: var(--body);
     }
-    /* Only show the pro/tech/com about paragraph, not the goal one */
-    #print-header-right .about-text[data-tags*="goal"] { display: none !important; }
     .header-eyebrow { display: none; }
-    h1 { font-size: 20pt; line-height: 1; margin-bottom: .12cm; letter-spacing: -.01em; }
-    .tagline { font-size: 7pt; margin-bottom: .2cm; letter-spacing: .02em; }
-    .contact-row { font-size: 6.5pt; gap: .7rem; flex-wrap: wrap; }
+    h1 { font-size: 18pt; line-height: 1; margin-bottom: .1cm; letter-spacing: -.01em; }
+    .tagline { font-size: 6.5pt; margin-bottom: .15cm; letter-spacing: .04em; }
+    .contact-row { font-size: 6pt; gap: .6rem; flex-wrap: wrap; }
 
-    /* ── Two-column body — table layout (Grid causes phantom pages in Chrome print) ── */
-    #print-body {
-      display: table !important;
-      width: 100%;
-      table-layout: fixed;
-      margin-top: .4cm;
-    }
-    #print-main {
-      display: table-cell !important;
-      vertical-align: top;
-      padding-right: .3cm;
-    }
-    #print-side {
-      display: table-cell !important;
-      width: 9cm;
-      vertical-align: top;
-      border-left: 1pt solid var(--border);
-      padding-left: .45cm;
-    }
+    /* ── Single-column body — all wrappers are plain blocks ── */
+    #print-body { display: block !important; }
+    #print-main  { display: block !important; }
+    #print-side  { display: block !important; }
 
-    /* Section labels */
-    section { margin-top: .35cm; }
-    .section-label {
-      font-size: 5.5pt; letter-spacing: .22em;
-      margin-bottom: .25cm; color: var(--accent);
-    }
+    /* ── Sections ── */
+    section { margin-top: .28cm; }
+    .section-label { font-size: 5.5pt; letter-spacing: .22em; margin-bottom: .2cm; color: var(--accent); }
     .section-label::after { background: var(--border); }
 
-    /* Experience / internship items */
-    .exp-item {
-      grid-template-columns: 2.1cm 1fr;
-      gap: .3cm;
-      padding: .28cm 0;
-      animation: none;
-    }
-    .exp-period { font-size: 6.5pt; }
+    /* ── Experience / internship items ── */
+    .exp-item { grid-template-columns: 2cm 1fr; gap: .3cm; padding: .22cm 0; animation: none; }
+    .exp-period   { font-size: 6.5pt; }
     .exp-location { font-size: 6pt; }
-    .exp-role { font-size: 9pt; margin-bottom: .05cm; }
-    .exp-org  { font-size: 7pt; }
-    .exp-org-row { margin-bottom: .18cm; }
-    .exp-desc { font-size: 7.5pt; line-height: 1.4; }
-    .exp-desc ul { padding-left: .7rem; }
-    .exp-desc li { margin-bottom: .08cm; }
+    .exp-role     { font-size: 9pt; margin-bottom: .04cm; }
+    .exp-org      { font-size: 7pt; }
+    .exp-org-row  { margin-bottom: .12cm; }
+    .exp-desc-intro { font-size: 7pt; line-height: 1.4; font-style: italic; margin-bottom: .12cm; color: var(--subtle); }
+    .exp-desc     { font-size: 7.5pt; line-height: 1.4; }
+    .exp-desc ul  { padding-left: .7rem; }
+    .exp-desc li  { margin-bottom: .05cm; }
 
-    /* Education items */
-    .edu-item {
-      grid-template-columns: 2.1cm 1fr;
-      gap: .3cm;
-      padding: .25cm 0;
+    /* Technologies — shown in print with a small label prefix */
+    .skill-tags { display: flex; flex-wrap: wrap; gap: .15rem; margin-top: .15rem; align-items: baseline; }
+    .skill-tags::before {
+      content: 'Tech: '; font-size: 5pt; letter-spacing: .1em;
+      text-transform: uppercase; color: var(--muted); margin-right: .1rem;
     }
+    .skill-tag { font-size: 5.5pt; padding: .03cm .15cm; border-color: var(--border); color: var(--subtle); }
+
+    /* ── Education ── */
+    .edu-item { grid-template-columns: 2cm 1fr; gap: .3cm; padding: .2cm 0; }
     .edu-period { font-size: 6.5pt; }
-    .edu-degree { font-size: 8.5pt; margin-bottom: .06cm; }
-    .edu-school { font-size: 7pt; margin-bottom: .1cm; }
+    .edu-degree { font-size: 8.5pt; margin-bottom: .05cm; }
+    .edu-school { font-size: 7pt; margin-bottom: .08cm; }
     .edu-note   { font-size: 6.5pt; line-height: 1.35; }
 
-    /* Skills — single column in sidebar */
-    .skills-outer { grid-template-columns: 1fr; gap: .3cm; }
-    .skill-group h3 { font-size: 5.5pt; margin-bottom: .15cm; }
-    .pill {
-      font-size: 6pt; padding: .05cm .2cm;
-      border-color: var(--border); color: var(--subtle);
-    }
-    .pill-row { gap: .15rem; }
+    /* ── Skills — 3-column grid ── */
+    .skills-outer { grid-template-columns: repeat(3, 1fr); gap: .18cm .4cm; }
+    .skill-group h3 { font-size: 5.5pt; margin-bottom: .1cm; }
+    .pill { font-size: 6pt; padding: .03cm .16cm; border-color: var(--border); color: var(--subtle); }
+    .pill-row { gap: .1rem; }
 
-    /* Languages — tighter */
-    .lang-row {
-      grid-template-columns: 1.6cm 1fr 1.8cm;
-      gap: .25cm; padding: .18cm 0;
-    }
+    /* ── Languages ── */
+    .lang-row { grid-template-columns: 1.6cm 1fr 1.8cm; gap: .25cm; padding: .14cm 0; }
     .lang-name  { font-size: 7pt; }
     .lang-level { font-size: 6pt; }
     .lang-fill  { background: var(--accent); }
 
-    /* Certs */
-    .cert-row { flex-direction: column; gap: .2cm; }
-    .cert-card {
-      padding: .2cm .35cm;
-      background: var(--surface);
-      border-color: var(--border);
-    }
+    /* ── Certifications ── */
+    .cert-row { flex-direction: row; flex-wrap: wrap; gap: .2cm; }
+    .cert-card { padding: .18cm .3cm; background: var(--surface); border-color: var(--border); }
     .cert-issuer { font-size: 5.5pt; }
     .cert-name   { font-size: 7pt; }
 
-    /* Projects in sidebar */
-    .exp-item.project-item {
-      grid-template-columns: 1fr;
-      gap: .1cm;
-    }
-    .exp-item.project-item .exp-meta { display: none; }
+    /* ── Page breaks — items only, NOT sections ──────────────────────
+       section-level break-inside:avoid was the blank first-page culprit:
+       it forced the entire experience section to page 2 as one block.   */
+    .exp-item    { page-break-inside: avoid; break-inside: avoid; }
+    .edu-item    { page-break-inside: avoid; break-inside: avoid; }
+    .skill-group { page-break-inside: avoid; break-inside: avoid; }
+    .cert-card   { page-break-inside: avoid; break-inside: avoid; }
+    .lang-row    { page-break-inside: avoid; break-inside: avoid; }
 
-    /* Page break control — nothing splits across pages */
-    section                { page-break-inside: avoid; break-inside: avoid; }
-    .exp-item              { page-break-inside: avoid; break-inside: avoid; }
-    .edu-item              { page-break-inside: avoid; break-inside: avoid; }
-    .skill-group           { page-break-inside: avoid; break-inside: avoid; }
-    .cert-card             { page-break-inside: avoid; break-inside: avoid; }
-    .lang-row              { page-break-inside: avoid; break-inside: avoid; }
     footer { display: none; }
   }
 
-  /* ── RESPONSIVE ── */
+
   @media (max-width: 580px) {
     .exp-item, .edu-item { grid-template-columns: 1fr; gap: .4rem; }
     h1 { font-size: 2.6rem; }
@@ -562,9 +521,13 @@ function renderExpItems(items, allTags) {
   return items.map((e, i) => {
     const t = normTags(e.tags);
     const title = e.role || e.name || '';
-    const bullets = e.bullets || (e.description ? [e.description] : []);
+    // description = optional italic intro (new field); bullets = functions list
+    const bullets = e.bullets || [];
+    const hasBullets = bullets.length > 0;
+    const hasDesc = !!e.description;
+    // fallback: if no description and no bullets, nothing to show
     return `
-    <div class="exp-item" data-tags="${t.join(' ')}" style="animation-delay:${i*.05}s">
+    <div class="exp-item" data-tags="${t.join(' ')}">
       <div class="exp-meta">
         <div class="exp-period">${e.period || ''}</div>
         <div class="exp-location">${e.location || ''}</div>
@@ -575,7 +538,8 @@ function renderExpItems(items, allTags) {
           <span class="exp-org">${e.org || ''}</span>
           ${optLink(e.link, e.org)}
         </div>
-        <div class="exp-desc">${bulletsHTML(bullets)}</div>
+        ${hasDesc ? `<p class="exp-desc-intro">${e.description}</p>` : ''}
+        ${hasBullets ? `<div class="exp-desc">${bulletsHTML(bullets)}</div>` : ''}
         ${skillTagsHTML(e.skills)}
       </div>
     </div>`;
