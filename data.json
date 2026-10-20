@@ -7,11 +7,11 @@
     "linkedin": "https://www.linkedin.com/in/vascopferreira/",
     "github": "",
     "website": "",
-    "lastUpdated": "June 2026"
+    "lastUpdated": "August 2026"
   },
   "about": [
     {
-      "text": "An engineer with a genuine passion for data, systems, and the craft of building and testing reliable software. Outside of the terminal I try to make a world a better place.",
+      "text": "I'm an engineer who likes to understand systems and is curious about the craft of building and testing software. Outside the terminal, I enjoy the technology of the natural world.",
       "tags": [
         "pro",
         "tech"
@@ -24,7 +24,7 @@
       ]
     },
     {
-      "text": "There are a lot of things I would love to do. Some I have already done and would like to keep improving — this is how I keep track.",
+      "text": "There are a lot of things I would love to do. Some I have already done and would like to keep improving, this is how I keep track.",
       "tags": [
         "goal"
       ]
@@ -104,13 +104,12 @@
         "pro",
         "tech"
       ],
-      "description": "Amadeus is the world's largest travel tech / GDS platform that airlines and travel sellers use to distribute flights, and NDC-X is Amadeus's program that makes it capable of handling NDC — the modern, API-based standard for airlines to sell richer offers directly.",
+      "description": "Amadeus is the world's largest travel tech / GDS platform that airlines and travel sellers use to distribute flights, and NDC-X is Amadeus's program that makes it capable of handling NDC, a modern, API-based standard for airlines to sell richer offers directly.",
       "bullets": [
         "Ensured quality within a SAFe/Scrum team involved across the full lifecycle from refinement to PRD activation, through design, implementation, testing and demo.",
         "Planned and designed compliance, performance and functional testing such as integration, API, E2E, sanity and regression.",
         "Provided investigation and diagnosis on technical support to customers.",
-        "QA team lead in the NDCX NDC API platform and mentoring to newcommers.",
-        "Designed and implemented from scratch a regression test suite in the CI/CD workflow with dashboards for reporting and alerting. Active contributor to the test suite.",
+        "QA Test Lead initiative coordinating a team of engineers to build an automated regression suite from scratch in Python and Robot Framework, integrated into a containerized Jenkins CI/CD pipeline with test data management, Grafana dashboards for quality monitoring, and a quality gate.",
         "PR review from developers."
         
       ],
@@ -143,7 +142,7 @@
       "bullets": [
         "Functional, integration, and regression testing on embedded software systems for automotive ECUs.",
         "Testing platform for Autonomous Driving (BMW / AUTOSAR) using TDFNext Framework with Hardware-in-Loop (HiL) simulation.",
-        "Measured stack size management for automotive embedded systems — integration of Gliwa T1 for runtime.",
+        "Measured stack size management for automotive embedded systems by integrating of Gliwa T1 for runtime.",
         "Agile environment; collaborated across developers, project managers, and clients to report testing progress and risks."
       ],
       "skills": [
@@ -166,7 +165,7 @@
       ],
       "description": "ISR-UC is a private non-profit R&D lab. It does advanced research in mobile & field robotics, medical robotics, computer vision, assistive tech, intelligent transportation and energy systems.",
       "bullets": [
-        "Co-created a technology that creates unique stochastic markings to authenticate high-end products — currently deployed in tobacco package stamps.",
+        "Co-created a technology that creates unique stochastic markings to authenticate high-end products that are currently deployed in tobacco package stamps.",
         "Applied computer vision and machine learning to recognise and authenticate images using advanced image descriptors.",
         "Extracted forensic features (particles, faces, fingerprints) for use in identity documents in collaboration with Portugal's National Mint (INCM)."
       ],
@@ -188,7 +187,7 @@
       ],
       "description": "ESN is the largest student organization in Europe that helps Erasmus exchange students integrate through buddy programs, events and support.",
       "bullets": [
-        "Organised trips and events in Portugal for international students — accommodations, transport, activities.",
+        "Organised trips and events in Portugal for international students such as accommodations, transport, activities.",
         "Provided onboarding for new members."
       ],
       "skills": [
@@ -290,7 +289,7 @@
   ],
   "education": [
     {
-      "degree": "Master's — Electrical & Computer Engineering (academic)",
+      "degree": "Master's in Electrical & Computer Engineering (academic)",
       "school": "University of Coimbra",
       "period": "2018 – 2021",
       "note": "Computer Architecture, Computer Vision, Digital Fabrication, MEMS, High Performance Computing, Real-Time Systems, Systems Engineering.",
@@ -300,7 +299,7 @@
       ]
     },
     {
-      "degree": "Bachelor's — Electrical Engineering",
+      "degree": "Bachelor's in Electrical Engineering",
       "school": "University of Coimbra",
       "period": "2012 – 2018",
       "note": "Comprehensive engineering sciences with hands-on laboratory and project-oriented learning.",
@@ -310,7 +309,7 @@
       ]
     },
     {
-      "degree": "HighSchool — Sciences & Technologies",
+      "degree": "HighSchool in Sciences & Technologies",
       "school": "Centro de Estudos de Fátima",
       "period": "2009 – 2012",
       "note": "Secondary Education Diploma – Science and Technology",
@@ -330,7 +329,7 @@
     },
     {
       "degree": "Scouts Movement",
-      "school": "Corpo Nacional de Escutas — National Body of the Scout Movement",
+      "school": "Corpo Nacional de Escutas - National Body of the Scout Movement",
       "period": "2001 – 2014",
       "note": "Non-formal education in the Scout Movement rooted in nature, service to local communities, leadership development, outdoor survival, constructive dialogue, and values-driven action.",
       "tags": [
@@ -384,7 +383,8 @@
         "OutSystems",
         "Arduino",
         "Visual Studio",
-        "LaTeX"
+        "LaTeX",
+        "Powershell"
       ],
       "tags": [
         "pro",
@@ -465,7 +465,7 @@
     },
     {
       "issuer": "Cambridge & IELTS",
-      "name": "FCE — First Certificate in English"
+      "name": "First Certificate in English (B2)"
     }
   ],
   "hobbies": [
@@ -561,6 +561,28 @@
   ],
   "projects": [
     {
+      "role": "Web3 Community & Project Contributor",
+      "org": "Traditional Dream Factory",
+      "period": "June 2026 - Present",
+      "location": "Portugal",
+      "tags": [
+        "com",
+        "tech"
+      ],
+      "bullets": [
+        "Contributed to a Web3 project exploring tokenized access rights and decentralized governance for a regenerative physical community.",
+        "Participated in the development and discussion of mechanisms connecting blockchain-based tokens with real-world access, contribution and community governance.",
+        "Gained hands-on exposure to the Celo ecosystem, token mechanics, DAO governance and the challenges of connecting on-chain systems with real-world processes.",
+        "Contributed from a software/QA perspective, bringing experience in testing, system thinking and identifying edge cases across interconnected digital workflows."
+      ],
+      "skills": [
+        "We3 Governance",
+        "Blockchain",
+        "DAOs"
+      ],
+      "description": "Traditional Dream Factory (TDF) is a Web3 project using blockchain, tokenized access rights, and decentralized governance to build a regenerative community around shared physical land."
+    },
+    {
       "role": "Part-time Land Manager",
       "org": "Family land",
       "period": "",
@@ -633,20 +655,25 @@
       ]
     },
     {
-      "role": "Competition — European BEST Engineering Competition (EBEC)",
+      "role": "European BEST Engineering Competition (EBEC)",
       "org": "Board of European Students of Technology (BEST)",
       "period": "2013 – 2014",
       "location": "Coimbra, Portugal",
       "tags": [
         "pro",
-        "com"
+        "com",
+        "tech"
       ],
       "description": "Pan-European student engineering competition. Teams of 4 solve complex technical challenges across local, regional, and European finals.",
-      "bullets": [],
+      "bullets": [
+        "Co-organised the logistics for the venue including food",
+        "Contacted and co-designed together with Active Space Technologies the competition case study."
+      ],
       "skills": [
         "Engineering",
         "Teamwork",
-        "Problem Solving"
+        "Problem Solving",
+        "Event Managment"
       ]
     }
   ],
@@ -679,7 +706,7 @@
         {
           "title": "Diving in Komodo and Raj Ampat, Indonesia",
           "done": false,
-          "note": "Diving in one of the most beautiful places on earth — something I would love to do.",
+          "note": "Diving in one of the most beautiful places on earth, something I would love to do.",
           "link": ""
         },
         {
@@ -811,7 +838,7 @@
         {
           "title": "Learning basic French",
           "done": true,
-          "note": "Living in Nice got me to a conversational level — though jokes are still a work in progress.",
+          "note": "Living in Nice got me to a conversational level, though jokes are still a work in progress.",
           "link": ""
         },
         {
